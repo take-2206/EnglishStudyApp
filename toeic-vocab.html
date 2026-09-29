@@ -1,0 +1,2677 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>TOEIC từ vựng Anh–Nhật</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#fbe6d0;
+  --card:#fff;
+  --ink:#1c1b22;
+  --muted:#7d7480;
+  --org:#f7955a;
+  --orgd:#c4551c;
+  --lav:#aa9ef6;
+  --lavs:#e9e5fc;
+  --dk:#23222b;
+  --dkink:#fff;
+  --soft:#fdf0e3;
+  --seg:rgba(255,255,255,.7);
+  --line:#efe0d0;
+  --ok:#127a45;
+  --okbg:#d8f3e3;
+  --bad:#b3261e;
+  --badbg:#fde1dc;
+  --sh:0 14px 28px -18px rgba(120,60,20,.55);
+  --disp:Outfit,"Noto Sans JP","Hiragino Sans",system-ui,sans-serif;
+}
+
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1a1512;
+    --card:#2a231e;
+    --ink:#f6ede4;
+    --muted:#b3a597;
+    --org:#f7955a;
+    --orgd:#f7a878;
+    --lav:#8b7ff0;
+    --lavs:#38335e;
+    --dk:#0e0c0a;
+    --dkink:#f6ede4;
+    --soft:#372e27;
+    --seg:rgba(255,255,255,.12);
+    --line:#3d332b;
+    --ok:#6ee7a0;
+    --okbg:#0f3322;
+    --bad:#ff9d9d;
+    --badbg:#3d1620;
+    --sh:0 14px 28px -18px rgba(0,0,0,.8)
+  }
+}
+
+:root[data-theme="dark"]{
+  --bg:#1a1512;
+  --card:#2a231e;
+  --ink:#f6ede4;
+  --muted:#b3a597;
+  --org:#f7955a;
+  --orgd:#f7a878;
+  --lav:#8b7ff0;
+  --lavs:#38335e;
+  --dk:#0e0c0a;
+  --dkink:#f6ede4;
+  --soft:#372e27;
+  --seg:rgba(255,255,255,.12);
+  --line:#3d332b;
+  --ok:#6ee7a0;
+  --okbg:#0f3322;
+  --bad:#ff9d9d;
+  --badbg:#3d1620;
+  --sh:0 14px 28px -18px rgba(0,0,0,.8)
+}
+
+*{box-sizing:border-box}
+
+[hidden]{display:none!important}
+
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:16px/1.55 var(--disp)
+}
+
+.wrap{
+  max-width:430px;
+  margin:0 auto;
+  padding:20px 16px calc(112px + env(safe-area-inset-bottom,0px))
+}
+
+button{font-family:inherit}
+
+button:focus-visible,
+input:focus-visible{
+  outline:3px solid var(--ink);
+  outline-offset:2px
+}
+
+.ic,
+.go svg,
+#nav svg{
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round
+}
+
+.hi{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+
+.av{
+  width:50px;height:50px;border-radius:50%;
+  background:var(--lavs);
+  display:grid;place-items:center;
+  border:2px solid var(--card)
+}
+.av svg{width:30px;height:30px}
+.hi b{display:block;font-weight:800;font-size:1.2rem;line-height:1.2}
+.hi small{color:var(--muted)}
+
+.hero{
+  position:relative;min-height:200px;padding:24px;
+  border-radius:32px;background:var(--lav);color:#1c1b22;
+  overflow:hidden;box-shadow:var(--sh)
+}
+.hero h2{font-weight:800;font-size:2rem;line-height:1.08;margin:0 0 8px}
+.hero p{margin:0;max-width:17ch;font-size:.92rem}
+.cap{position:absolute;right:-8px;top:14px;width:150px;pointer-events:none}
+
+.go{
+  width:50px;height:50px;border-radius:50%;border:0;
+  background:var(--dk);color:var(--dkink);
+  display:grid;place-items:center;cursor:pointer;flex:none;
+  transition:transform .15s
+}
+.go:active{transform:scale(.93)}
+.go svg{width:22px;height:22px}
+.hero .go{margin-top:22px;width:58px;height:58px}
+
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 4px}
+.stat{border-radius:28px;padding:16px 18px;color:#1c1b22}
+.stat.o{background:#ffd3b3}
+.stat.l{background:var(--lavs);color:var(--ink)}
+.stat small{display:block;font-size:.85rem;opacity:.8}
+.stat b{font-weight:800;font-size:2.5rem;line-height:1.1}
+
+.st{font-weight:800;font-size:1.45rem;margin:22px 0 10px}
+
+.chips{
+  display:flex;gap:8px;overflow-x:auto;
+  margin:0 -16px 4px;padding:2px 16px 6px;
+  scrollbar-width:none
+}
+.chip{
+  flex:none;border:0;border-radius:999px;
+  background:var(--card);color:var(--ink);
+  padding:10px 16px;font-weight:700;font-size:.92rem;cursor:pointer
+}
+.chip small{font-weight:400;opacity:.65;margin-left:4px}
+.chip.on{background:var(--dk);color:var(--dkink)}
+
+.dc{
+  display:flex;justify-content:space-between;align-items:flex-end;gap:12px;
+  min-height:132px;padding:20px;border-radius:30px;margin-bottom:12px;color:#1c1b22
+}
+.dc.dark{background:var(--dk);color:var(--dkink)}
+.dc.lav{background:var(--lav)}
+.dc.orange{background:var(--org)}
+.dc p{margin:0}
+.dt{font-size:.85rem;opacity:.75}
+.dc h3{margin:2px 0 8px;font-weight:800;font-size:1.25rem;line-height:1.25}
+.dm{font-size:.85rem;opacity:.85}
+.dc.dark .go{background:transparent;border:2px solid var(--dkink)}
+
+.chart{background:var(--card);border-radius:30px;padding:18px;box-shadow:var(--sh)}
+.bars{display:flex;gap:10px;height:160px}
+.bc{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px}
+.bcol{
+  flex:1;width:100%;display:flex;align-items:flex-end;
+  background:var(--soft);border-radius:20px;overflow:hidden
+}
+.bcol b{
+  display:block;width:100%;background:var(--orgd);color:#fff;
+  text-align:center;font-size:.85rem;padding-top:5px;
+  border-radius:20px;min-height:28px
+}
+.bc span{font-size:.78rem;color:var(--muted)}
+
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.circle{
+  width:46px;height:46px;border-radius:50%;border:0;
+  background:var(--card);color:var(--ink);
+  display:grid;place-items:center;cursor:pointer;box-shadow:var(--sh)
+}
+.circle svg{width:22px;height:22px}
+.sh b{display:block;font-weight:800;font-size:1.25rem;line-height:1.2}
+.sh small{color:var(--muted)}
+
+#nav{
+  position:fixed;left:50%;transform:translateX(-50%);
+  bottom:calc(12px + env(safe-area-inset-bottom,0px));
+  width:min(calc(100% - 24px),400px);
+  display:flex;gap:4px;background:var(--dk);
+  border-radius:32px;padding:8px;z-index:20
+}
+#nav button{
+  flex:1;border:0;background:transparent;color:#b9b3bf;
+  display:flex;flex-direction:column;align-items:center;gap:1px;
+  padding:7px 0;border-radius:24px;font-weight:600;font-size:.7rem;cursor:pointer
+}
+#nav svg{width:22px;height:22px}
+#nav button.on{background:var(--org);color:#1c1b22}
+
+.bar{display:flex;align-items:center;gap:6px;margin:16px 0 14px}
+.bar i{flex:1;height:9px;border-radius:9px;background:var(--seg);transition:background .2s}
+.bar i.on{background:var(--orgd)}
+.track{flex:1;height:9px;background:var(--seg);border-radius:9px;overflow:hidden}
+.fill{height:100%;background:var(--orgd);transition:width .3s}
+.bar span{font-size:.85rem;color:var(--muted);white-space:nowrap;margin-left:6px}
+
+.card{
+  display:flex;flex-direction:column;width:100%;min-height:320px;
+  padding:0;border:0;border-radius:32px;
+  background:var(--card);color:var(--ink);
+  text-align:center;cursor:pointer;box-shadow:var(--sh)
+}
+.tk-head{
+  display:flex;justify-content:space-between;padding:13px 24px;
+  background:var(--org);color:#1c1b22;
+  border-radius:32px 32px 0 0;font-size:.82rem;font-weight:700
+}
+.tk-top{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:6px;padding:26px 20px;animation:pop .22s ease-out
+}
+.tk-bot{
+  position:relative;display:flex;justify-content:space-between;align-items:center;
+  gap:12px;padding:16px 26px;border-top:2px dashed var(--line);
+  color:var(--muted);font-size:.9rem;text-align:left
+}
+.tk-bot::before,
+.tk-bot::after{
+  content:"";position:absolute;top:-13px;width:24px;height:24px;
+  border-radius:50%;background:var(--bg)
+}
+.tk-bot::before{left:-12px}
+.tk-bot::after{right:-12px}
+.tk-bot small{display:block}
+.stub{font-weight:800;font-size:1.05rem;color:var(--orgd)}
+
+@keyframes pop{from{opacity:0;transform:translateY(8px)}}
+@media (prefers-reduced-motion:reduce){.tk-top{animation:none}}
+
+.q{
+  width:100%;background:var(--card);border-radius:30px;
+  padding:26px 20px;text-align:center;box-shadow:var(--sh)
+}
+.word{
+  font-weight:800;font-size:2.8rem;line-height:1.1;
+  letter-spacing:-.02em;overflow-wrap:anywhere
+}
+.pos{color:var(--orgd);font-weight:700;font-size:.95rem}
+.vi{font-weight:800;font-size:1.8rem;line-height:1.3}
+.x,.hint{color:var(--muted);font-size:.9rem}
+.ex{
+  margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);
+  width:100%;font-size:.97rem
+}
+.ex small,.tk-bot span small{color:var(--muted);font-size:.88rem}
+
+.row{display:flex;gap:10px;margin-top:12px;align-items:center}
+.btn{
+  flex:1;border:0;background:var(--card);color:var(--ink);
+  font-weight:700;font-size:.95rem;padding:14px 10px;
+  border-radius:22px;cursor:pointer;transition:transform .12s
+}
+.btn:active{transform:scale(.97)}
+.btn.main{background:var(--dk);color:var(--dkink)}
+.btn.ok{background:var(--okbg);color:var(--ok)}
+.btn.no{background:var(--badbg);color:var(--bad)}
+
+.opts{display:grid;gap:10px;margin-top:16px}
+.opt{
+  display:flex;align-items:center;gap:12px;text-align:left;
+  padding:12px 14px;background:var(--soft)
+}
+.k{
+  flex:none;width:30px;height:30px;border-radius:50%;
+  background:var(--lav);color:#1c1b22;
+  display:grid;place-items:center;font-weight:800;font-size:.85rem
+}
+.opt.right{background:var(--okbg);color:var(--ok)}
+.opt.wrong{background:var(--badbg);color:var(--bad)}
+
+.dir{display:flex;gap:8px;margin-top:12px}
+.dir .btn{padding:10px 6px;font-size:.85rem}
+.dir .on{background:var(--dk);color:var(--dkink)}
+
+.inp{
+  width:100%;margin-top:14px;padding:14px;
+  font-weight:700;font-size:1.15rem;font-family:inherit;text-align:center;
+  border:2px solid transparent;border-radius:20px;
+  background:var(--soft);color:var(--ink)
+}
+.fb{font-weight:800;margin:12px 0 0}
+.fb.ok{color:var(--ok)}
+.fb.bad{color:var(--bad)}
+.big{font-weight:800;font-size:3.4rem;color:var(--orgd)}
+
+.loading{min-height:60vh;display:grid;place-items:center;text-align:center}
+.loading b{display:block;font-size:1.3rem}
+.loading small{color:var(--muted)}
+
+.errorbox{
+  background:var(--badbg);color:var(--bad);padding:18px;
+  border-radius:24px;margin-top:20px;word-break:break-word
+}
+
+.sync{
+  position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:10px;z-index:30;
+  padding:6px 10px;border-radius:999px;
+  background:var(--card);color:var(--muted);
+  box-shadow:var(--sh);font-size:.72rem;opacity:.85
+}
+
+/* SELECTION FLOW UI */
+.selection-head{display:flex;align-items:center;gap:12px;margin:6px 0 18px}
+.selection-head small{
+  color:var(--muted);font-size:.78rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.04em
+}
+.selection-head h1{margin:2px 0 0;font-size:1.55rem;line-height:1.15;font-weight:800}
+.selection-avatar,
+.back-selection{
+  width:50px;height:50px;border:0;border-radius:18px;
+  background:var(--lavs);display:grid;place-items:center;
+  color:var(--ink);font-size:1.35rem;flex:none
+}
+.back-selection{cursor:pointer;font-size:1.55rem;box-shadow:var(--sh)}
+.steps{display:flex;align-items:center;margin:4px 0 18px}
+.step{display:flex;align-items:center;gap:6px;color:var(--muted);white-space:nowrap}
+.step span{
+  width:28px;height:28px;border-radius:50%;
+  display:grid;place-items:center;background:var(--soft);
+  font-size:.78rem;font-weight:800
+}
+.step small{font-size:.68rem;font-weight:700}
+.step.active span,
+.step.done span{background:var(--org);color:#1c1b22}
+.step.active small{color:var(--ink)}
+.step-line{flex:1;height:2px;background:var(--line);margin:0 7px}
+.selection-hero{
+  padding:22px;border-radius:28px;background:var(--lav);
+  color:#1c1b22;margin-bottom:16px
+}
+.selection-hero.compact{padding:19px 20px}
+.selection-hero .eyebrow{
+  display:inline-block;font-size:.7rem;font-weight:800;
+  letter-spacing:.08em;opacity:.7;margin-bottom:6px
+}
+.selection-hero h2{margin:0 0 7px;font-size:1.65rem;line-height:1.12;font-weight:800}
+.selection-hero p{margin:0;font-size:.9rem;max-width:34ch}
+.level-list,.day-list,.mode-list{display:grid;gap:12px}
+.level-card{
+  position:relative;width:100%;border:0;border-radius:28px;
+  padding:18px;text-align:left;color:#1c1b22;cursor:pointer;
+  box-shadow:var(--sh);overflow:hidden;
+  transition:transform .12s, box-shadow .12s
+}
+.level-card:active,
+.day-card:active,
+.mode-card:active{transform:scale(.985)}
+.level-card:nth-child(1){background:#ffd3b3}
+.level-card:nth-child(2){background:var(--lav)}
+.level-card:nth-child(3){background:#bdebd7}
+.level-card:nth-child(4){background:#f7c7c7}
+.level-card-top,
+.level-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.level-number{font-size:.72rem;font-weight:900;opacity:.55}
+.level-range{
+  padding:5px 9px;border-radius:999px;
+  background:rgba(255,255,255,.48);font-size:.72rem;font-weight:800
+}
+.level-icon{font-size:2rem;margin:12px 0 2px}
+.level-info h3{margin:0;font-size:1.35rem;font-weight:800}
+.level-info p{margin:3px 0 12px;font-size:.82rem;opacity:.72}
+.level-progress,
+.day-progress{
+  height:7px;background:rgba(255,255,255,.55);
+  border-radius:999px;overflow:hidden
+}
+.level-progress span,
+.day-progress span{display:block;height:100%;background:#23222b;border-radius:999px}
+.level-bottom{margin-top:10px}
+.level-bottom small{font-size:.75rem;opacity:.7}
+.level-bottom b{font-size:.8rem}
+.selected-level-pill{
+  display:flex;align-items:center;gap:8px;padding:11px 14px;
+  margin-bottom:12px;border-radius:18px;background:var(--card);
+  box-shadow:var(--sh);font-size:.8rem
+}
+.selected-level-pill span{color:var(--muted)}
+.selected-level-pill b{font-weight:800}
+.selected-level-pill small{margin-left:auto;color:var(--muted)}
+.day-card{
+  width:100%;border:0;border-radius:26px;padding:16px;text-align:left;
+  background:var(--card);color:var(--ink);box-shadow:var(--sh);cursor:pointer
+}
+.day-card-head{display:flex;align-items:center;justify-content:space-between}
+.day-badge{
+  width:36px;height:36px;border-radius:13px;display:grid;place-items:center;
+  background:var(--org);color:#1c1b22;font-weight:900
+}
+.day-percent,
+.complete-badge{font-size:.72rem;font-weight:800;color:var(--muted)}
+.complete-badge{color:var(--ok)}
+.day-card-body{padding:13px 0 12px}
+.day-card-body small{font-size:.7rem;font-weight:800;color:var(--muted)}
+.day-card-body h3{margin:4px 0;font-size:1.08rem;line-height:1.3}
+.day-card-body p{margin:0;color:var(--muted);font-size:.8rem}
+.day-progress{margin-bottom:10px;background:var(--soft)}
+.day-progress span{background:var(--orgd)}
+.day-card-action{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:.8rem;font-weight:800
+}
+.mode-card{
+  width:100%;display:flex;align-items:center;gap:14px;border:0;
+  border-radius:28px;padding:18px;text-align:left;
+  background:var(--card);color:var(--ink);box-shadow:var(--sh);cursor:pointer
+}
+.mode-card.mode-card{background:var(--dk);color:var(--dkink)}
+.mode-card.mode-quiz{background:var(--lav);color:#1c1b22}
+.mode-card.mode-type{background:var(--org);color:#1c1b22}
+.mode-icon{
+  width:54px;height:54px;border-radius:18px;display:grid;place-items:center;
+  background:rgba(255,255,255,.25);font-size:1.6rem;flex:none
+}
+.mode-copy{flex:1}
+.mode-copy small{
+  display:block;font-size:.68rem;font-weight:800;opacity:.65;text-transform:uppercase
+}
+.mode-copy h3{margin:2px 0 3px;font-size:1.25rem;font-weight:800}
+.mode-copy p{margin:0;font-size:.8rem;opacity:.72;line-height:1.35}
+.mode-arrow{font-size:1.35rem;flex:none}
+
+.mode-card.mode-grammar{background:var(--lav);color:#1c1b22}
+.mode-card.mode-manage{background:var(--org);color:#1c1b22}
+
+.m-row{
+  display:flex;align-items:center;gap:10px;padding:12px 14px;
+  background:var(--card);border-radius:20px;box-shadow:var(--sh);margin-bottom:10px
+}
+.m-main{flex:1;min-width:0;text-align:left}
+.m-main b{font-weight:800}
+.m-main small{
+  display:block;color:var(--muted);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap
+}
+.m-act{display:flex;gap:6px;flex:none}
+.mbtn{
+  border:0;border-radius:14px;padding:8px 12px;font-weight:700;
+  font-size:.8rem;background:var(--soft);color:var(--ink);cursor:pointer
+}
+.mbtn.del{background:var(--badbg);color:var(--bad)}
+.fld{display:block;margin-top:12px;text-align:left}
+.fld>span{display:block;font-size:.8rem;font-weight:700;color:var(--muted);margin-bottom:4px}
+.fld input,.fld textarea{
+  width:100%;padding:12px 14px;border:2px solid transparent;border-radius:16px;
+  background:var(--soft);color:var(--ink);font:inherit;font-size:1rem
+}
+.fld textarea{min-height:110px;resize:vertical}
+.fld small{display:block;margin-top:4px;color:var(--muted);font-size:.78rem;line-height:1.4}
+textarea:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+.g-list{margin:8px 0 0;padding-left:20px}
+.g-list li{margin-bottom:8px;font-size:.97rem}
+.g-list b{color:var(--orgd)}
+.ex b{color:var(--orgd)}
+.g-note{margin:12px 0 0;padding:12px 14px;border-radius:18px;background:var(--soft);font-size:.92rem;text-align:left}
+
+@media (max-width:380px){
+  .word{font-size:2.3rem}
+  .cap{width:120px}
+}
+</style>
+</head>
+
+<body>
+
+<div id="sync" class="sync">Đang tải...</div>
+
+<div class="wrap">
+  <main id="hub"></main>
+  <main id="home" hidden></main>
+
+  <main id="study" hidden>
+    <div id="sthead"></div>
+    <div id="app"></div>
+  </main>
+
+  <main id="grammar" hidden></main>
+
+  <main id="manage" hidden></main>
+</div>
+
+<nav id="nav" aria-label="Điều hướng"></nav>
+
+<script>
+/* =========================================================
+   LOCAL JSON
+   ========================================================= */
+const WORDS_JSON = "./words.json";
+const PROGRESS_KEY = "toeic-progress-v1";
+
+/* Escape HTML để dữ liệu chứa < > & không làm vỡ giao diện */
+const esc = s => String(s).replace(/[&<>"']/g, c => ({
+  "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+}[c]));
+
+async function loadWords(){
+  setSync("Đang tải từ vựng...");
+  const res = await fetch(WORDS_JSON, { cache: "no-store" });
+  if(!res.ok){
+    throw new Error(`Không tải được ${WORDS_JSON} (${res.status})`);
+  }
+  const data = await res.json();
+  if(!data || !Array.isArray(data.levels) || !data.levels.length){
+    throw new Error("words.json không có dữ liệu từ vựng hợp lệ.");
+  }
+  return data;
+}
+
+/* Mỗi từ: [0]=word, [1]=pos, [2]=meaning, [3]=example_en, [4]=example_ja, [5]=id, [6]=word gốc (chưa escape) */
+function buildLevels(data){
+  const c = readCustom().vocab;
+
+  return data.levels.map((level, levelIndex) => {
+    const base = (level.words || [])
+      .map((word, wordIndex) => ({
+        id: word.id || `level${String(levelIndex+1).padStart(2,"0")}-${String(wordIndex+1).padStart(3,"0")}`,
+        word: String(word.word),
+        pos: word.pos || "",
+        meaning: word.meaning || "",
+        example_en: word.example_en || "",
+        example_ja: word.example_ja || ""
+      }))
+      .filter(x => !c.deleted.includes(x.id))
+      .map(x => c.edits[x.id] ? Object.assign({}, x, c.edits[x.id], {id:x.id}) : x);
+
+    const added = c.added.filter(x => x.lv === levelIndex);
+
+    return {
+      n: esc(level.level),
+      r: esc(level.range),
+      w: base.concat(added).map(x => [
+        esc(x.word),
+        esc(x.pos || ""),
+        esc(x.meaning || ""),
+        esc(x.example_en || ""),
+        esc(x.example_ja || ""),
+        x.id,
+        String(x.word),
+        x
+      ])
+    };
+  });
+}
+
+/* =========================================================
+   DEVICE / LOCAL PROGRESS
+   ========================================================= */
+function getUserId(){
+  try{
+    let id = localStorage.getItem("toeic-user-id");
+    if(!id){
+      id = "device-" + crypto.randomUUID();
+      localStorage.setItem("toeic-user-id", id);
+    }
+    return id;
+  }catch(e){
+    return "device-temp";
+  }
+}
+const USER_ID = getUserId();
+
+/* =========================================================
+   APP STATE
+   ========================================================= */
+let LV = [];
+
+const MODES = { card:"Thẻ học", quiz:"Trắc nghiệm", type:"Gõ từ" };
+
+const S = {
+  view:"hub",
+  screen:"levels",
+  picked:false,
+  done:false,
+  day:0,
+  lv:0,
+  mode:"card",
+  dir:"ej",
+  i:0,
+  flip:false,
+  quiz:null,
+  t:null,
+  known:[[],[],[],[]]
+};
+
+const PER = 10;
+
+/* =========================================================
+   HELPERS
+   ========================================================= */
+const $ = id => document.getElementById(id);
+
+const shuffle = a => {
+  a = a.slice();
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [a[i],a[j]] = [a[j],a[i]];
+  }
+  return a;
+};
+
+function setSync(text,color){
+  const el = $("sync");
+  if(!el) return;
+  el.textContent = text;
+  el.style.color = color || "";
+}
+
+/* =========================================================
+   LOCALSTORAGE PROGRESS
+   ========================================================= */
+function readProgress(){
+  try{
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    const data = raw ? JSON.parse(raw) : {};
+    return data && typeof data === "object" ? data : {};
+  }catch(error){
+    console.warn("Không đọc được tiến độ:", error);
+    return {};
+  }
+}
+
+function writeProgress(data){
+  try{
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
+  }catch(e){
+    console.warn("Không lưu được tiến độ:", e);
+  }
+}
+
+async function loadProgress(){
+  setSync("Đang tải tiến độ...");
+  const progress = readProgress();
+  S.known = LV.map(level =>
+    level.w.filter(w => Boolean(progress[w[5]])).map(w => w[0])
+  );
+}
+
+function saveProgress(word, known){
+  const id = word[5];
+  if(!id) return;
+  const progress = readProgress();
+  if(known){
+    progress[id] = { known:true, updated_at:new Date().toISOString() };
+  }else{
+    delete progress[id];
+  }
+  writeProgress(progress);
+  setSync("Đã lưu trên thiết bị ✓", "var(--ok)");
+}
+
+/* =========================================================
+   MARK KNOWN
+   ========================================================= */
+function mark(word){
+  if(!S.known[S.lv].includes(word[0])){
+    S.known[S.lv].push(word[0]);
+  }
+  saveProgress(word, true);
+}
+
+function unmark(word){
+  S.known[S.lv] = S.known[S.lv].filter(x => x !== word[0]);
+  saveProgress(word, false);
+}
+
+/* =========================================================
+   DAY
+   ========================================================= */
+const ALL = () => LV[S.lv].w;
+const off = () => S.day * PER;
+const W = () => ALL().slice(off(), off()+PER);
+const ND = () => Math.ceil(ALL().length/PER);
+
+function dayNoAt(lv,d){
+  return LV.slice(0,lv).reduce((a,l)=>a + Math.ceil(l.w.length/PER), 0) + d + 1;
+}
+const dayNo = () => dayNoAt(S.lv, S.day);
+
+/* =========================================================
+   SPEAK
+   ========================================================= */
+function speak(t){
+  try{
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang = "en-US";
+    u.rate = .85;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+/* =========================================================
+   ICONS
+   ========================================================= */
+const IC = {
+  home:'<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+  card:'<rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h5"/>',
+  quiz:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/>',
+  type:'<rect x="3" y="7" width="18" height="11" rx="2"/><path d="M7 11h.01M11 11h.01M15 11h.01M8 15h8"/>',
+  gram:'<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M8 7h7M8 11h5"/>',
+  manage:'<circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>'
+};
+
+/* =========================================================
+   NAV
+   ========================================================= */
+function nav(){
+  const it = [
+    ["hub","Home","home"],
+    ["vocab","Từ vựng","card"],
+    ["grammar","Ngữ pháp","gram"],
+    ["manage","Quản lý","manage"]
+  ];
+
+  $("nav").innerHTML = it.map(([k,n,ic])=>{
+    const on = k==="vocab"
+      ? (S.view==="home" || S.view==="study")
+      : S.view===k;
+
+    return `
+      <button
+        data-nav="${k}"
+        class="${on?"on":""}"
+        aria-label="${n}"
+      >
+        <svg viewBox="0 0 24 24">${IC[ic]}</svg>
+        ${n}
+      </button>
+    `;
+  }).join("");
+}
+
+/* =========================================================
+   HOME
+   ========================================================= */
+function levelStats(li){
+  const level = LV[li];
+  const known = S.known[li] || [];
+  const total = level.w.length;
+  const remembered = level.w.filter(w => known.includes(w[0])).length;
+  return {
+    total,
+    remembered,
+    pct: total ? Math.round(remembered / total * 100) : 0,
+    days: Math.ceil(total / PER)
+  };
+}
+
+function renderSteps(active){
+  const steps = [
+    ["levels", "1", "Cấp độ"],
+    ["days", "2", "Ngày"],
+    ["modes", "3", "Chế độ học"]
+  ];
+
+  return `
+    <div class="steps" aria-label="Tiến trình chọn bài">
+      ${steps.map(([key,num,label],i)=>`
+        <div class="step ${active===key ? "active" : ""} ${steps.findIndex(x=>x[0]===active)>i ? "done" : ""}">
+          <span>${num}</span>
+          <small>${label}</small>
+        </div>
+        ${i<steps.length-1 ? `<i class="step-line"></i>` : ""}
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderLevelSelect(){
+  if(VOCAB_ERR){
+    $("home").innerHTML = `
+      <div class="selection-head">
+        <button class="back-selection" data-nav="hub" aria-label="Về trang chủ">←</button>
+        <div>
+          <small>TOEIC Vocabulary</small>
+          <h1>Từ vựng</h1>
+        </div>
+      </div>
+      <div class="errorbox">
+        <b>Không tải được từ vựng</b>
+        <p>${esc(VOCAB_ERR)}</p>
+        <p>Hãy đặt <b>index.html</b> và <b>words.json</b> cùng thư mục rồi chạy bằng web server.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const cards = LV.map((level, i)=>{
+    const st = levelStats(i);
+    return `
+      <button type="button" class="level-card level-${i}" data-lv="${i}" aria-label="Chọn ${level.n}">
+        <div class="level-card-top">
+          <span class="level-number">${String(i+1).padStart(2,"0")}</span>
+          <span class="level-range">${level.r} điểm</span>
+        </div>
+        <div class="level-icon">
+          ${i===0 ? "🌱" : i===1 ? "📘" : i===2 ? "🚀" : "🏆"}
+        </div>
+        <div class="level-info">
+          <h3>${level.n}</h3>
+          <p>${st.total} từ · ${st.days} ngày học</p>
+        </div>
+        <div class="level-progress">
+          <span style="width:${st.pct}%"></span>
+        </div>
+        <div class="level-bottom">
+          <small>${st.remembered}/${st.total} từ đã nhớ</small>
+          <b>Chọn →</b>
+        </div>
+      </button>
+    `;
+  }).join("");
+
+  $("home").innerHTML = `
+    <div class="selection-head">
+      <button class="back-selection" data-nav="hub" aria-label="Về trang chủ">←</button>
+      <div>
+        <small>TOEIC Vocabulary</small>
+        <h1>Chọn cấp độ</h1>
+      </div>
+    </div>
+
+    ${renderSteps("levels")}
+
+    <section class="selection-hero">
+      <span class="eyebrow">BƯỚC 1</span>
+      <h2>Bạn muốn học<br>ở mức nào?</h2>
+      <p>Chọn cấp độ phù hợp với mục tiêu điểm TOEIC của bạn.</p>
+    </section>
+
+    <div class="level-list">
+      ${cards}
+    </div>
+  `;
+}
+
+function renderDaySelect(){
+  const level = LV[S.lv];
+  const known = S.known[S.lv] || [];
+
+  const days = Array.from({length:ND()}, (_,d)=>{
+    const words = level.w.slice(d*PER, d*PER+PER);
+    const remembered = words.filter(w=>known.includes(w[0])).length;
+    const complete = remembered === words.length && words.length > 0;
+    const pct = words.length ? Math.round(remembered / words.length * 100) : 0;
+
+    return `
+      <button type="button" class="day-card ${complete ? "complete" : ""}" data-day="${d}">
+        <div class="day-card-head">
+          <span class="day-badge">${d+1}</span>
+          ${complete ? `<span class="complete-badge">✓ Hoàn thành</span>` : `<span class="day-percent">${pct}%</span>`}
+        </div>
+        <div class="day-card-body">
+          <small>NGÀY ${dayNoAt(S.lv,d)}</small>
+          <h3>${words.slice(0,4).map(w=>w[0]).join(", ")}${words.length>4 ? "…" : ""}</h3>
+          <p>${remembered}/${words.length} từ đã nhớ</p>
+        </div>
+        <div class="day-progress"><span style="width:${pct}%"></span></div>
+        <div class="day-card-action">Bắt đầu học <b>→</b></div>
+      </button>
+    `;
+  }).join("");
+
+  $("home").innerHTML = `
+    <div class="selection-head">
+      <button class="back-selection" data-screen="levels" aria-label="Chọn lại cấp độ">←</button>
+      <div>
+        <small>${level.n} · ${level.r} điểm</small>
+        <h1>Chọn ngày học</h1>
+      </div>
+    </div>
+
+    ${renderSteps("days")}
+
+    <section class="selection-hero compact">
+      <span class="eyebrow">BƯỚC 2</span>
+      <h2>Hôm nay bạn học ngày nào?</h2>
+      <p>Mỗi ngày gồm tối đa ${PER} từ. Chọn ngày để tiếp tục.</p>
+    </section>
+
+    <div class="selected-level-pill">
+      <span>Đang chọn</span><b>${level.n}</b><small>${level.r} điểm</small>
+    </div>
+
+    <div class="day-list">
+      ${days}
+    </div>
+  `;
+}
+
+function renderModeSelect(){
+  const level = LV[S.lv];
+  const words = W();
+  const remembered = words.filter(w=>S.known[S.lv].includes(w[0])).length;
+
+  const modes = [
+    ["card", "🃏", "Thẻ học", "Lật thẻ, xem nghĩa và nghe phát âm.", "Học từ mới"],
+    ["quiz", "🧠", "Trắc nghiệm", "Kiểm tra khả năng nhớ nghĩa và từ vựng.", "Kiểm tra"],
+    ["type", "⌨️", "Gõ từ", "Nhìn nghĩa tiếng Nhật và tự gõ từ tiếng Anh.", "Luyện nhớ"]
+  ];
+
+  $("home").innerHTML = `
+    <div class="selection-head">
+      <button class="back-selection" data-screen="days" aria-label="Chọn lại ngày">←</button>
+      <div>
+        <small>${level.n} · Ngày ${dayNo()}</small>
+        <h1>Chọn chế độ học</h1>
+      </div>
+    </div>
+
+    ${renderSteps("modes")}
+
+    <section class="selection-hero compact">
+      <span class="eyebrow">BƯỚC 3</span>
+      <h2>Bắt đầu học nào!</h2>
+      <p>Ngày ${dayNo()} có ${words.length} từ · Bạn đã nhớ ${remembered}/${words.length}.</p>
+    </section>
+
+    <div class="mode-list">
+      ${modes.map(([key,icon,title,desc,label])=>`
+        <button type="button" class="mode-card mode-${key}" data-start-mode="${key}">
+          <span class="mode-icon">${icon}</span>
+          <span class="mode-copy">
+            <small>${label}</small>
+            <h3>${title}</h3>
+            <p>${desc}</p>
+          </span>
+          <b class="mode-arrow">→</b>
+        </button>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderHome(){
+  if(S.screen === "days") return renderDaySelect();
+  if(S.screen === "modes") return renderModeSelect();
+  return renderLevelSelect();
+}
+
+/* =========================================================
+   PROGRESS BAR
+   ========================================================= */
+function progress(){
+  const k = S.known[S.lv];
+  const ws = W();
+  const n = ws.filter(w=>k.includes(w[0])).length;
+
+  return `
+    <div class="bar" role="img" aria-label="Đã nhớ ${n}/${ws.length}">
+      ${ws.map(w=>`<i class="${k.includes(w[0]) ? "on" : ""}"></i>`).join("")}
+      <span>Đã nhớ ${n}/${ws.length}</span>
+    </div>
+  `;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+function renderCard(){
+  const w = W()[S.i];
+
+  const head = `
+    <div class="tk-head">
+      <span>TOEIC ${LV[S.lv].r}</span>
+      <span>Ngày ${dayNo()}</span>
+    </div>
+  `;
+
+  const front = head + `
+    <div class="tk-top">
+      <div class="pos">${w[1]}</div>
+      <div class="word">${w[0]}</div>
+    </div>
+    <div class="tk-bot">
+      <span>Chạm để xem nghĩa tiếng Nhật</span>
+      <span class="stub">${S.i+1}/${W().length}</span>
+    </div>
+  `;
+
+  const back = head + `
+    <div class="tk-top">
+      <div class="pos">${w[0]} · ${w[1]}</div>
+      <div class="vi">${w[2]}</div>
+    </div>
+    <div class="tk-bot">
+      <span>
+        ${w[3]}
+        <small>${w[4]}</small>
+      </span>
+      <span class="stub">${S.i+1}/${W().length}</span>
+    </div>
+  `;
+
+  $("app").innerHTML = progress() + `
+    <button class="card" data-act="flip" aria-label="Lật thẻ">
+      ${S.flip ? back : front}
+    </button>
+
+    <div class="row">
+      <button class="btn" data-act="speak">Nghe phát âm</button>
+      <button class="btn" data-act="shuf">Từ ngẫu nhiên</button>
+    </div>
+
+    <div class="row">
+      <button class="btn no" data-act="unknown">Chưa nhớ</button>
+      <button class="btn ok" data-act="known">
+        ${S.known[S.lv].includes(W()[S.i][0]) ? "Đã nhớ ✓" : "Đã nhớ"}
+      </button>
+    </div>
+
+    <div class="row">
+      <button class="btn" data-act="prev">Từ trước</button>
+      <span class="hint">${S.i+1}/${W().length}</span>
+      <button class="btn main" data-act="next">Từ sau</button>
+    </div>
+  `;
+}
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+/* Đáp án nhiễu: chỉ lấy trong cùng cấp độ, loại từ trùng chữ / trùng nghĩa với đáp án đúng */
+function makeOpts(wi){
+  const cur = ALL()[wi];
+  const pool = ALL()
+    .map((_,i)=>i)
+    .filter(i=>{
+      const w = ALL()[i];
+      return i!==wi && w[2]!==cur[2] && w[0]!==cur[0];
+    });
+  return shuffle([wi, ...shuffle(pool).slice(0,3)]);
+}
+
+function startQuiz(){
+  const list = shuffle(W().map((_,j)=>off()+j));
+  S.quiz = {
+    list,
+    idx:0,
+    score:0,
+    picked:null,
+    opts:makeOpts(list[0])
+  };
+}
+
+function dirBar(){
+  return `
+    <div class="dir">
+      <button class="btn${S.dir==="ej" ? " on" : ""}" data-dir="ej">Anh → Nhật</button>
+      <button class="btn${S.dir==="je" ? " on" : ""}" data-dir="je">Nhật → Anh</button>
+    </div>
+  `;
+}
+
+function renderQuiz(){
+  if(!S.quiz) startQuiz();
+  const q = S.quiz;
+
+  if(q.idx >= q.list.length){
+    const pct = Math.round(q.score / q.list.length * 100);
+
+    $("app").innerHTML = dirBar() + `
+      <div class="q">
+        <div>Kết quả của bạn</div>
+        <div class="big">${q.score}/${q.list.length}</div>
+        <p class="x">
+          ${
+            pct>=80
+              ? "Rất tốt! Hãy tiếp tục ôn luyện."
+              : pct>=50
+                ? "Khá ổn. Ôn lại các từ chưa nhớ."
+                : "Hãy quay lại thẻ học để ôn thêm."
+          }
+        </p>
+        <div class="row">
+          <button class="btn" data-act="retry">Làm lại</button>
+          ${
+            S.day+1<ND()
+              ? `<button class="btn main" data-act="nextday">Ngày tiếp theo</button>`
+              : ""
+          }
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const w = ALL()[q.list[q.idx]];
+  const ej = S.dir==="ej";
+
+  const opts = q.opts.map((i,n)=>{
+    let c = "btn opt";
+
+    if(q.picked!==null){
+      if(i===q.list[q.idx]) c += " right";
+      else if(i===q.picked) c += " wrong";
+    }
+
+    return `
+      <button
+        class="${c}"
+        data-opt="${i}"
+        ${q.picked!==null ? "disabled" : ""}
+      >
+        <b class="k">${"ABCD"[n]}</b>
+        <span>${ej ? ALL()[i][2] : ALL()[i][0]}</span>
+      </button>
+    `;
+  }).join("");
+
+  $("app").innerHTML = dirBar() + `
+    <div class="bar">
+      <div class="track">
+        <div class="fill" style="width:${q.idx / q.list.length * 100}%"></div>
+      </div>
+      <span>Câu ${q.idx+1}/${q.list.length}</span>
+    </div>
+
+    <div class="q">
+      ${
+        ej
+          ? `<div class="word">${w[0]}</div><div class="pos">${w[1]}</div>`
+          : `<div class="vi">${w[2]}</div>`
+      }
+
+      <p class="x">
+        ${ej ? "Chọn nghĩa tiếng Nhật đúng." : "Chọn từ tiếng Anh đúng."}
+      </p>
+
+      <div class="opts">${opts}</div>
+    </div>
+  `;
+}
+
+/* =========================================================
+   TYPE
+   ========================================================= */
+function renderType(){
+  const w = W()[S.i];
+  const t = S.t || {res:null};
+  const raw = w[6];
+
+  $("app").innerHTML = progress() + `
+    <div class="q">
+      <div class="vi">${w[2]}</div>
+
+      <div class="x">
+        ${w[1]},
+        ${raw.length} chữ cái,
+        bắt đầu bằng "${esc(raw[0])}"
+      </div>
+
+      <input
+        id="ans"
+        class="inp"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+        placeholder="Gõ từ tiếng Anh"
+        aria-label="Từ tiếng Anh"
+        ${t.res ? "disabled" : ""}
+      >
+
+      ${
+        t.res
+          ? `
+            <p class="fb ${t.res}">
+              ${t.res==="ok" ? "Chính xác!" : "Đáp án: " + w[0]}
+            </p>
+            <div class="ex">
+              ${w[3]}
+              <small>${w[4]}</small>
+            </div>
+          `
+          : ""
+      }
+
+      <div class="row">
+        ${
+          t.res
+            ? `<button class="btn main" data-act="tnext">Từ tiếp theo</button>`
+            : `
+              <button class="btn" data-act="reveal">Xem đáp án</button>
+              <button class="btn main" data-act="check">Kiểm tra</button>
+            `
+        }
+      </div>
+    </div>
+  `;
+
+  const el = $("ans");
+  if(el && !t.res) el.focus();
+}
+
+function check(){
+  const el = $("ans");
+  if(!el || !el.value.trim()) return;
+
+  const w = W()[S.i];
+  const ok = el.value.trim().toLowerCase() === w[6].toLowerCase();
+
+  S.t = { res: ok ? "ok" : "bad" };
+
+  if(ok) mark(w);
+
+  renderType();
+}
+
+/* =========================================================
+   RENDER
+   ========================================================= */
+/* Màn hình báo hết từ của ngày (dùng cho Thẻ học và Gõ từ) */
+function renderDone(){
+  const ws = W();
+  const k = S.known[S.lv];
+  const n = ws.filter(w=>k.includes(w[0])).length;
+  const pct = ws.length ? Math.round(n / ws.length * 100) : 0;
+
+  $("app").innerHTML = `
+    <div class="q">
+      <div style="font-size:3rem">🎉</div>
+      <div class="vi">Hết ${ws.length} từ rồi!</div>
+      <div class="big">${n}/${ws.length}</div>
+      <p class="x">
+        Bạn đã nhớ ${n}/${ws.length} từ của Ngày ${dayNo()}.<br>
+        ${
+          pct===100
+            ? "Hoàn hảo! Bạn đã nhớ toàn bộ từ trong ngày."
+            : pct>=50
+              ? "Khá tốt. Học lại để nhớ nốt những từ còn lại."
+              : "Hãy học lại để ghi nhớ thêm nhé."
+        }
+      </p>
+
+      <div class="row">
+        <button class="btn" data-act="again">Học lại</button>
+        ${
+          S.day+1<ND()
+            ? `<button class="btn main" data-act="nextday">Ngày tiếp theo</button>`
+            : ""
+        }
+      </div>
+      <div class="row">
+        <button class="btn" data-act="modes">Chọn chế độ khác</button>
+      </div>
+    </div>
+  `;
+}
+
+function render(){
+  nav();
+
+  ["hub","home","study","grammar","manage"].forEach(v=>{
+    $(v).hidden = S.view!==v;
+  });
+
+  if(S.view==="hub"){
+    renderHub();
+    return;
+  }
+
+  if(S.view==="manage"){
+    renderManage();
+    return;
+  }
+
+  if(S.view==="home"){
+    renderHome();
+    return;
+  }
+
+  if(S.view==="grammar"){
+    renderGrammar();
+    return;
+  }
+
+  $("sthead").innerHTML = `
+    <div class="sh">
+      <button class="circle" data-act="home" aria-label="Về trang chủ">
+        <svg class="ic" viewBox="0 0 24 24">
+          <path d="M19 12H5M11 6l-6 6 6 6"/>
+        </svg>
+      </button>
+      <div>
+        <b>Ngày ${dayNo()}</b>
+        <small>${LV[S.lv].n} · mốc ${LV[S.lv].r}</small>
+      </div>
+    </div>
+  `;
+
+  if(S.mode==="quiz") renderQuiz();
+  else if(S.done) renderDone();
+  else if(S.mode==="card") renderCard();
+  else renderType();
+}
+
+/* =========================================================
+   KEYBOARD
+   ========================================================= */
+document.addEventListener("keydown", e=>{
+  if(e.key==="Enter" && e.target.id==="ans") check();
+});
+
+/* =========================================================
+   CLICK EVENTS
+   ========================================================= */
+document.addEventListener("click", async e=>{
+  const b = e.target.closest("button");
+  if(!b) return;
+
+  const d = b.dataset;
+
+  /* Điều hướng chính */
+  if(d.nav){
+    handleNav(d.nav);
+    return;
+  }
+
+  /* Quản lý */
+  if(d.m){
+    handleManage(d);
+    return;
+  }
+
+  /* Ngữ pháp */
+  if(d.gt !== undefined || d.gact || d.gopt !== undefined){
+    handleGrammar(d);
+    return;
+  }
+
+  /* Quay lại bước trước trong luồng chọn */
+  if(d.screen){
+    S.screen = d.screen;
+    render();
+    return;
+  }
+
+  /* Chọn ngày */
+  if(d.day){
+    S.view = "home";
+    S.screen = "modes";
+    S.picked = true;
+    S.done = false;
+    S.day = +d.day;
+    S.i = 0;
+    S.flip = false;
+    S.quiz = null;
+    S.t = null;
+    render();
+    return;
+  }
+
+  /* Chọn level -> sang bước chọn ngày */
+  if(d.lv){
+    S.lv = +d.lv;
+    S.day = 0;
+    S.i = 0;
+    S.flip = false;
+    S.quiz = null;
+    S.t = null;
+    S.view = "home";
+    S.screen = "days";
+    S.picked = false;
+    render();
+    return;
+  }
+
+  /* Bắt đầu học từ màn chọn chế độ */
+  if(d.startMode){
+    S.view = "study";
+    S.mode = d.startMode;
+    S.done = false;
+    S.flip = false;
+    S.quiz = null;
+    S.t = null;
+    S.i = 0;
+    render();
+    return;
+  }
+
+  /* Chế độ từ thanh điều hướng: cần chọn cấp độ + ngày trước */
+  if(d.mode){
+    if(!S.picked){
+      S.view = "home";
+      S.screen = "levels";
+      render();
+      return;
+    }
+    S.view = "study";
+    S.mode = d.mode;
+    S.done = false;
+    S.flip = false;
+    S.quiz = null;
+    S.t = null;
+    S.i = 0;
+    render();
+    return;
+  }
+
+  /* Đổi hướng quiz */
+  if(d.dir){
+    S.dir = d.dir;
+    startQuiz();
+    render();
+    return;
+  }
+
+  /* Chọn đáp án quiz */
+  if(d.opt !== undefined){
+    const q = S.quiz;
+    if(!q || q.picked!==null) return;
+
+    q.picked = +d.opt;
+
+    if(q.picked === q.list[q.idx]){
+      q.score++;
+      mark(ALL()[q.picked]);
+    }
+
+    renderQuiz();
+
+    setTimeout(()=>{
+      if(S.quiz!==q) return;
+
+      q.idx++;
+      q.picked = null;
+
+      if(q.idx < q.list.length){
+        q.opts = makeOpts(q.list[q.idx]);
+      }
+
+      if(S.view==="study" && S.mode==="quiz") renderQuiz();
+    }, 1300);
+
+    return;
+  }
+
+  /* Các action */
+  const n = S.view==="study" ? W().length : 0;
+
+  switch(d.act){
+    case "flip":
+      S.flip = !S.flip;
+      break;
+
+    case "next":
+      if(S.i+1 >= n){ S.done = true; }
+      else { S.i++; }
+      S.flip = false;
+      break;
+
+    case "prev":
+      S.i = (S.i-1+n)%n;
+      S.flip = false;
+      break;
+
+    case "shuf":
+      S.i = Math.floor(Math.random()*n);
+      S.flip = false;
+      break;
+
+    case "speak":
+      speak(W()[S.i][6]);
+      return;
+
+    case "known":{
+      const w = W()[S.i];
+      mark(w);
+      if(S.i+1 >= n){ S.done = true; }
+      else { S.i++; }
+      S.flip = false;
+      break;
+    }
+
+    case "unknown":{
+      const w = W()[S.i];
+      unmark(w);
+      if(S.i+1 >= n){ S.done = true; }
+      else { S.i++; }
+      S.flip = false;
+      break;
+    }
+
+    case "retry":
+      startQuiz();
+      break;
+
+    case "check":
+      check();
+      return;
+
+    case "reveal":
+      S.t = { res:"bad" };
+      renderType();
+      return;
+
+    case "gram":
+      S.view = "grammar";
+      G.screen = "list";
+      G.quiz = null;
+      break;
+
+    case "home":
+      S.view = "home";
+      S.screen = "levels";
+      break;
+
+    case "nextday":
+      if(S.day+1 < ND()) S.day++;
+      S.done = false;
+      S.i = 0;
+      S.flip = false;
+      S.quiz = null;
+      S.t = null;
+      break;
+
+    case "tnext":
+      if(S.i+1 >= n){ S.done = true; }
+      else { S.i++; }
+      S.t = null;
+      break;
+
+    case "again":
+      S.done = false;
+      S.i = 0;
+      S.flip = false;
+      S.t = null;
+      S.quiz = null;
+      break;
+
+    case "modes":
+      S.done = false;
+      S.view = "home";
+      S.screen = "modes";
+      break;
+  }
+
+  render();
+});
+
+/* =========================================================
+   START APP
+   ========================================================= */
+/* =========================================================
+   GRAMMAR
+   ========================================================= */
+const GRAMMAR_KEY = "toeic-grammar-v1";
+
+/* **chữ** -> in đậm, còn lại được escape */
+const fmt = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+
+const GRAMMAR_BASE = [
+  {
+    id:"pos", icon:"🔤", title:"Từ loại", ja:"品詞",
+    summary:"Nhìn vị trí trong câu để chọn danh từ, tính từ, trạng từ hay động từ.",
+    rules:[
+      "Sau mạo từ (a, the) hoặc tính từ sở hữu (our, their) là **danh từ** (hoặc tính từ + danh từ): the **decision**, our **success**.",
+      "Đứng trước danh từ là **tính từ**: a **reliable** supplier.",
+      "Bổ nghĩa cho động từ, tính từ hoặc cả câu là **trạng từ** (đuôi -ly): review **carefully**, **highly** recommended.",
+      "Sau to hoặc động từ khuyết thiếu (will, can, must) là **động từ nguyên mẫu**: must **follow**."
+    ],
+    examples:[
+      ["The manager made a quick **decision**.", "部長は素早い決断を下した。"],
+      ["Please review the contract **carefully**.", "契約書を慎重に確認してください。"]
+    ],
+    q:[
+      {s:"The board approved the ___ of the new branch.", o:["open","opening","openly","opened"], a:1, e:"Sau 'the' và trước 'of' cần một danh từ: opening (việc khai trương)."},
+      {s:"Ms. Tanaka is a highly ___ project manager.", o:["experience","experienced","experiencing","experiences"], a:1, e:"Trước danh từ 'project manager' cần tính từ: experienced (nhiều kinh nghiệm)."},
+      {s:"All employees must ___ the safety guidelines.", o:["following","followed","follow","follows"], a:2, e:"Sau động từ khuyết thiếu 'must' dùng động từ nguyên mẫu: follow."},
+      {s:"The new software runs ___ on older computers.", o:["smooth","smoothly","smoothness","smoothing"], a:1, e:"Bổ nghĩa cho động từ 'runs' cần trạng từ: smoothly."}
+    ]
+  },
+  {
+    id:"tense", icon:"⏰", title:"Các thì", ja:"時制",
+    summary:"Dựa vào từ chỉ thời gian (since, last year, next week...) để chọn thì đúng.",
+    rules:[
+      "**Hiện tại đơn**: sự thật, thói quen, lịch trình cố định: The train **leaves** at 9.",
+      "**Hiện tại hoàn thành**: since, for, so far, recently, already, yet: We **have used** this supplier since 2018.",
+      "**Quá khứ đơn**: yesterday, last year, ago: The company **moved** last year.",
+      "**Tương lai** (will + V) cho hành động sắp tới. Trong mệnh đề với if, when, before, as soon as thì dùng **hiện tại đơn**, không dùng will."
+    ],
+    examples:[
+      ["We **have used** this supplier since 2018.", "当社は2018年からこの仕入れ先を利用しています。"],
+      ["If the shipment **arrives** on time, we will start production.", "荷物が予定通りに届けば、生産を開始します。"]
+    ],
+    q:[
+      {s:"The company ___ its headquarters to Osaka last year.", o:["moves","moved","has moved","will move"], a:1, e:"'last year' chỉ thời điểm đã qua nên dùng quá khứ đơn: moved."},
+      {s:"Sales ___ steadily since the campaign began.", o:["increase","increased","have increased","will increase"], a:2, e:"'since' + mốc thời gian trong quá khứ đi với hiện tại hoàn thành: have increased."},
+      {s:"If the report ___ ready by Friday, we will send it to the client.", o:["is","will be","was","would be"], a:0, e:"Mệnh đề if chỉ tương lai dùng hiện tại đơn: is."},
+      {s:"The conference ___ next Tuesday at 10 a.m.", o:["starts","started","has started","was starting"], a:0, e:"Lịch trình cố định dùng hiện tại đơn dù có 'next Tuesday': starts."}
+    ]
+  },
+  {
+    id:"prep", icon:"📍", title:"Giới từ", ja:"前置詞",
+    summary:"Phân biệt giới từ chỉ thời gian: at/on/in, by/until, during/for/within.",
+    rules:[
+      "**at** + giờ, điểm: at 9 a.m.; **on** + ngày, thứ: on Monday, on May 5; **in** + tháng, năm, mùa: in June, in 2026.",
+      "**by** = không muộn hơn (hạn chót): by Friday. **until** = liên tục cho đến: until Friday.",
+      "**during** + danh từ (sự kiện): during the meeting. **for** + khoảng thời gian: for three hours.",
+      "**within** + khoảng thời gian = trong vòng: within 30 days."
+    ],
+    examples:[
+      ["Please submit the form **by** Friday.", "金曜日までにフォームを提出してください。"],
+      ["The store will stay open **until** 9 p.m.", "店は午後9時まで開いています。"]
+    ],
+    q:[
+      {s:"The seminar will be held ___ March 12.", o:["in","at","on","by"], a:2, e:"Ngày cụ thể dùng 'on': on March 12."},
+      {s:"Please return the signed contract ___ the end of the week.", o:["until","by","during","for"], a:1, e:"Hạn chót (không muộn hơn) dùng 'by'."},
+      {s:"Several customers asked questions ___ the presentation.", o:["during","for","while","since"], a:0, e:"'during' + danh từ (the presentation). 'while' phải đi với mệnh đề."},
+      {s:"Refunds are available ___ 30 days of purchase.", o:["within","during","at","on"], a:0, e:"'within' + khoảng thời gian = trong vòng 30 ngày."}
+    ]
+  },
+  {
+    id:"conj", icon:"🔗", title:"Liên từ", ja:"接続詞",
+    summary:"Phân biệt từ đi với mệnh đề (S + V) và từ đi với danh từ / V-ing.",
+    rules:[
+      "**although / even though** + mệnh đề (S + V). **despite / in spite of** + danh từ hoặc V-ing.",
+      "**because** + mệnh đề. **because of / due to** + danh từ.",
+      "**both A and B**, **either A or B**, **neither A nor B**, **not only A but also B**: các cặp liên từ phải đi đủ cặp.",
+      "**while / whereas**: trong khi, diễn tả sự đối lập hoặc hai hành động song song."
+    ],
+    examples:[
+      ["**Although** it rained, the event went ahead.", "雨が降ったが、イベントは予定通り行われた。"],
+      ["The flight was delayed **because of** the storm.", "嵐のため、フライトは遅れた。"]
+    ],
+    q:[
+      {s:"___ the heavy traffic, Mr. Lee arrived on time.", o:["Although","Despite","Because","However"], a:1, e:"Sau chỗ trống là cụm danh từ 'the heavy traffic' nên dùng 'Despite'."},
+      {s:"The meeting was postponed ___ the manager was ill.", o:["because of","because","despite","due to"], a:1, e:"Sau chỗ trống là mệnh đề (the manager was ill) nên dùng 'because'."},
+      {s:"___ the price is high, the product sells very well.", o:["Despite","In spite of","Although","Due to"], a:2, e:"Sau chỗ trống là mệnh đề và nghĩa nhượng bộ nên dùng 'Although'."},
+      {s:"You can pay ___ by credit card or in cash.", o:["both","either","neither","whether"], a:1, e:"Cặp 'either ... or ...': hoặc ... hoặc ..."}
+    ]
+  },
+  {
+    id:"rel", icon:"🧩", title:"Mệnh đề quan hệ", ja:"関係詞",
+    summary:"Chọn đại từ quan hệ dựa vào danh từ đứng trước và vai trò trong mệnh đề.",
+    rules:[
+      "**who**: chỉ người, làm chủ ngữ: the employee **who** called. **which**: chỉ vật. **that**: người hoặc vật, nhưng không dùng sau dấu phẩy.",
+      "**whose** + danh từ: sở hữu: a company **whose** profits rose.",
+      "**whom**: người, làm tân ngữ, có thể đứng sau giới từ: the client to **whom** we wrote.",
+      "**where**: nơi chốn; **when**: thời gian."
+    ],
+    examples:[
+      ["The candidate **who** interviewed yesterday accepted the offer.", "昨日面接を受けた候補者が内定を受け入れた。"],
+      ["This is the office **where** the team works.", "ここがチームが働いているオフィスです。"]
+    ],
+    q:[
+      {s:"The applicant ___ resume impressed us was hired.", o:["who","whom","whose","which"], a:2, e:"Chỗ trống + danh từ 'resume' thể hiện sở hữu (hồ sơ của người đó): whose."},
+      {s:"The report, ___ was submitted yesterday, contains errors.", o:["that","which","who","whose"], a:1, e:"Sau dấu phẩy không dùng 'that'. Chỉ vật, làm chủ ngữ: which."},
+      {s:"We visited the factory ___ the products are made.", o:["where","which","who","whose"], a:0, e:"Danh từ chỉ nơi chốn (factory) và mệnh đề sau đã đủ chủ ngữ, động từ: where."},
+      {s:"Ms. Kim is the manager ___ leads the sales team.", o:["who","whom","whose","where"], a:0, e:"Chỉ người, làm chủ ngữ của 'leads': who."}
+    ]
+  },
+  {
+    id:"pass", icon:"🔁", title:"Bị động và phân từ", ja:"受動態・分詞",
+    summary:"Bị động dùng be + V3. Phân từ V-ing mang nghĩa chủ động, V-ed mang nghĩa bị động.",
+    rules:[
+      "**Bị động**: be + V3/ed: The report **was completed** by the team.",
+      "Sau động từ khuyết thiếu: will **be** + V3, must **be** + V3: All requests must **be submitted**.",
+      "**V-ed** bổ nghĩa cho danh từ bị tác động: a **damaged** package, the **revised** documents.",
+      "**V-ing** bổ nghĩa cho danh từ thực hiện hành động: the person **handling** the request."
+    ],
+    examples:[
+      ["The invoices will **be sent** tomorrow.", "請求書は明日送付されます。"],
+      ["The package **damaged** during shipping was replaced.", "輸送中に破損した荷物は交換された。"]
+    ],
+    q:[
+      {s:"The new policy ___ by the board last month.", o:["approved","was approved","has approving","approves"], a:1, e:"Chính sách 'được' phê duyệt (bị động) và có 'last month': was approved."},
+      {s:"All requests must ___ before the deadline.", o:["submit","be submitted","submitting","submitted"], a:1, e:"Sau 'must' dùng be + V3 vì các yêu cầu 'được' nộp: be submitted."},
+      {s:"The ___ documents were sent back to the client.", o:["revise","revising","revised","revises"], a:2, e:"Tài liệu 'được' chỉnh sửa (nghĩa bị động) nên dùng V-ed: revised."},
+      {s:"Employees ___ the training program will receive a certificate.", o:["complete","completing","completed","completes"], a:1, e:"Nhân viên là người thực hiện việc hoàn thành (nghĩa chủ động) nên dùng V-ing: completing."}
+    ]
+  }
+];
+
+let GRAMMAR = GRAMMAR_BASE.slice();
+
+const G = { screen:"list", t:0, quiz:null };
+
+function readGrammar(){
+  try{
+    const raw = localStorage.getItem(GRAMMAR_KEY);
+    const data = raw ? JSON.parse(raw) : {};
+    return data && typeof data === "object" ? data : {};
+  }catch(e){
+    return {};
+  }
+}
+
+function saveGrammarScore(id, score, total){
+  try{
+    const data = readGrammar();
+    const best = data[id] ? data[id].best : 0;
+    data[id] = { best:Math.max(best, score), total, updated_at:new Date().toISOString() };
+    localStorage.setItem(GRAMMAR_KEY, JSON.stringify(data));
+    setSync("Đã lưu trên thiết bị ✓", "var(--ok)");
+  }catch(e){}
+}
+
+function renderGrammarList(){
+  const saved = readGrammar();
+
+  const cards = GRAMMAR.map((t,i)=>{
+    const total = t.q.length;
+    const best = saved[t.id] ? saved[t.id].best : null;
+    const pct = best===null ? 0 : Math.round(best/total*100);
+
+    return `
+      <button type="button" class="day-card" data-gt="${i}">
+        <div class="day-card-head">
+          <span class="day-badge">${t.icon}</span>
+          ${
+            best===null
+              ? `<span class="day-percent">Chưa làm</span>`
+              : best===total
+                ? `<span class="complete-badge">✓ ${best}/${total}</span>`
+                : `<span class="day-percent">Tốt nhất ${best}/${total}</span>`
+          }
+        </div>
+        <div class="day-card-body">
+          <small>CHỦ ĐỀ ${i+1} · ${esc(t.ja)}</small>
+          <h3>${esc(t.title)}</h3>
+          <p>${esc(t.summary)}</p>
+        </div>
+        <div class="day-progress"><span style="width:${pct}%"></span></div>
+        <div class="day-card-action">Xem bài <b>→</b></div>
+      </button>
+    `;
+  }).join("");
+
+  $("grammar").innerHTML = `
+    <div class="selection-head">
+      <button class="back-selection" data-nav="hub" aria-label="Về trang chủ">←</button>
+      <div>
+        <small>TOEIC Grammar</small>
+        <h1>Ngữ pháp</h1>
+      </div>
+    </div>
+
+    <section class="selection-hero compact">
+      <span class="eyebrow">PART 5 · 6</span>
+      <h2>Ôn ngữ pháp trọng tâm</h2>
+      <p>Đọc quy tắc và ví dụ, sau đó làm các câu luyện tập cho mỗi chủ đề.</p>
+    </section>
+
+    <div class="day-list">${cards || `<div class="q"><p class="x">Chưa có chủ đề nào. Hãy thêm trong mục Quản lý.</p></div>`}</div>
+  `;
+}
+
+function renderGrammarLesson(){
+  const t = GRAMMAR[G.t];
+
+  $("grammar").innerHTML = `
+    <div class="selection-head">
+      <button class="back-selection" data-gact="list" aria-label="Về danh sách">←</button>
+      <div>
+        <small>Ngữ pháp · ${esc(t.ja)}</small>
+        <h1>${esc(t.title)}</h1>
+      </div>
+    </div>
+
+    <section class="selection-hero compact">
+      <span class="eyebrow">TÓM TẮT</span>
+      <h2>${t.icon} ${esc(t.title)}</h2>
+      <p>${esc(t.summary)}</p>
+    </section>
+
+    <div class="q" style="text-align:left">
+      <div class="pos">QUY TẮC</div>
+      <ul class="g-list">
+        ${t.rules.map(r=>`<li>${fmt(r)}</li>`).join("")}
+      </ul>
+
+      <div class="pos" style="margin-top:16px">VÍ DỤ</div>
+      ${t.examples.map(([en,ja])=>`
+        <div class="ex">
+          <div>${fmt(en)}</div>
+          <small>${esc(ja)}</small>
+        </div>
+      `).join("")}
+    </div>
+
+    <div class="row">
+      <button class="btn main" data-gact="start">Luyện tập (${t.q.length} câu)</button>
+    </div>
+  `;
+}
+
+function startGrammarQuiz(){
+  const t = GRAMMAR[G.t];
+  const qs = shuffle(t.q).map(q=>{
+    const order = shuffle(q.o.map((_,i)=>i));
+    return {
+      s:q.s,
+      o:order.map(i=>q.o[i]),
+      a:order.indexOf(q.a),
+      e:q.e
+    };
+  });
+  G.quiz = { qs, idx:0, score:0, picked:null };
+}
+
+function renderGrammarQuiz(){
+  const t = GRAMMAR[G.t];
+  if(!G.quiz) startGrammarQuiz();
+  const q = G.quiz;
+  const total = q.qs.length;
+
+  /* Kết quả */
+  if(q.idx >= total){
+    const pct = Math.round(q.score / total * 100);
+
+    $("grammar").innerHTML = `
+      <div class="selection-head">
+        <button class="back-selection" data-gact="list" aria-label="Về danh sách">←</button>
+        <div>
+          <small>Ngữ pháp · ${esc(t.title)}</small>
+          <h1>Kết quả</h1>
+        </div>
+      </div>
+
+      <div class="q">
+        <div style="font-size:3rem">${pct===100 ? "🎉" : "📝"}</div>
+        <div class="big">${q.score}/${total}</div>
+        <p class="x">
+          ${
+            pct===100
+              ? "Hoàn hảo! Bạn đã nắm vững chủ đề này."
+              : pct>=50
+                ? "Khá tốt. Đọc lại quy tắc rồi thử lại nhé."
+                : "Hãy xem lại bài học rồi làm lại."
+          }
+        </p>
+
+        <div class="row">
+          <button class="btn" data-gact="lesson">Xem lại bài</button>
+          <button class="btn" data-gact="start">Làm lại</button>
+        </div>
+        <div class="row">
+          ${
+            G.t+1 < GRAMMAR.length
+              ? `<button class="btn main" data-gact="nexttopic">Chủ đề tiếp theo</button>`
+              : `<button class="btn main" data-gact="list">Về danh sách</button>`
+          }
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const cur = q.qs[q.idx];
+  const answered = q.picked !== null;
+
+  const opts = cur.o.map((txt,n)=>{
+    let c = "btn opt";
+    if(answered){
+      if(n===cur.a) c += " right";
+      else if(n===q.picked) c += " wrong";
+    }
+    return `
+      <button class="${c}" data-gopt="${n}" ${answered ? "disabled" : ""}>
+        <b class="k">${"ABCD"[n]}</b>
+        <span>${esc(txt)}</span>
+      </button>
+    `;
+  }).join("");
+
+  const sentence = esc(cur.s).replace("___", `<b style="color:var(--orgd)">＿＿＿</b>`);
+
+  $("grammar").innerHTML = `
+    <div class="selection-head">
+      <button class="back-selection" data-gact="lesson" aria-label="Về bài học">←</button>
+      <div>
+        <small>Ngữ pháp · ${esc(t.title)}</small>
+        <h1>Luyện tập</h1>
+      </div>
+    </div>
+
+    <div class="bar">
+      <div class="track">
+        <div class="fill" style="width:${q.idx / total * 100}%"></div>
+      </div>
+      <span>Câu ${q.idx+1}/${total}</span>
+    </div>
+
+    <div class="q">
+      <div class="vi" style="font-size:1.4rem">${sentence}</div>
+      <p class="x">Chọn đáp án đúng để điền vào chỗ trống.</p>
+
+      <div class="opts">${opts}</div>
+
+      ${
+        answered
+          ? `
+            <p class="fb ${q.picked===cur.a ? "ok" : "bad"}">
+              ${q.picked===cur.a ? "Chính xác!" : "Chưa đúng"}
+            </p>
+            <div class="g-note">${esc(cur.e)}</div>
+            <div class="row">
+              <button class="btn main" data-gact="gnext">
+                ${q.idx+1 < total ? "Câu tiếp theo" : "Xem kết quả"}
+              </button>
+            </div>
+          `
+          : ""
+      }
+    </div>
+  `;
+}
+
+function renderGrammar(){
+  if(G.screen==="lesson") return renderGrammarLesson();
+  if(G.screen==="quiz") return renderGrammarQuiz();
+  return renderGrammarList();
+}
+
+function handleGrammar(d){
+  let scroll = true;
+
+  if(d.gt !== undefined){
+    G.t = +d.gt;
+    G.screen = "lesson";
+    G.quiz = null;
+  }
+  else if(d.gopt !== undefined){
+    const q = G.quiz;
+    if(!q || q.picked!==null) return;
+
+    q.picked = +d.gopt;
+    if(q.picked === q.qs[q.idx].a) q.score++;
+
+    if(q.idx === q.qs.length-1){
+      saveGrammarScore(GRAMMAR[G.t].id, q.score, q.qs.length);
+    }
+    scroll = false;
+  }
+  else{
+    switch(d.gact){
+      case "list":
+        G.screen = "list";
+        G.quiz = null;
+        break;
+
+      case "lesson":
+        G.screen = "lesson";
+        G.quiz = null;
+        break;
+
+      case "start":
+        startGrammarQuiz();
+        G.screen = "quiz";
+        break;
+
+      case "gnext":
+        if(G.quiz && G.quiz.picked!==null){
+          G.quiz.idx++;
+          G.quiz.picked = null;
+        }
+        break;
+
+      case "nexttopic":
+        if(G.t+1 < GRAMMAR.length){
+          G.t++;
+          G.screen = "lesson";
+          G.quiz = null;
+        }
+        break;
+    }
+  }
+
+  render();
+  if(scroll) window.scrollTo(0,0);
+}
+
+/* =========================================================
+   CUSTOM DATA (thêm / sửa / xóa) - lưu trên thiết bị
+   ========================================================= */
+const CUSTOM_KEY = "toeic-custom-v1";
+let RAW = null;
+let VOCAB_ERR = null;
+
+function readCustom(){
+  let d = {};
+  try{
+    d = JSON.parse(localStorage.getItem(CUSTOM_KEY) || "{}") || {};
+  }catch(e){
+    d = {};
+  }
+  const norm = x => ({
+    added: Array.isArray(x && x.added) ? x.added : [],
+    edits: x && x.edits && typeof x.edits === "object" ? x.edits : {},
+    deleted: Array.isArray(x && x.deleted) ? x.deleted : []
+  });
+  return { vocab:norm(d.vocab), grammar:norm(d.grammar) };
+}
+
+function writeCustom(c){
+  try{
+    localStorage.setItem(CUSTOM_KEY, JSON.stringify(c));
+    setSync("Đã lưu trên thiết bị ✓", "var(--ok)");
+  }catch(e){
+    setSync("Không lưu được (bộ nhớ bị chặn)", "var(--bad)");
+  }
+}
+
+function uid(prefix){
+  return prefix + Date.now().toString(36) + Math.random().toString(36).slice(2,6);
+}
+
+function buildGrammar(){
+  const c = readCustom().grammar;
+  const base = GRAMMAR_BASE
+    .filter(t => !c.deleted.includes(t.id))
+    .map(t => c.edits[t.id] ? Object.assign({}, c.edits[t.id], {id:t.id}) : t);
+  GRAMMAR = base.concat(c.added);
+  G.screen = "list";
+  G.quiz = null;
+  G.t = 0;
+}
+
+function rebuildVocab(){
+  if(!RAW) return;
+  LV = buildLevels(RAW);
+  S.known = LV.map(()=>[]);
+  loadProgress();
+  S.day = 0;
+  S.i = 0;
+  S.picked = false;
+  S.quiz = null;
+  S.t = null;
+  S.done = false;
+  S.flip = false;
+  if(S.lv >= LV.length) S.lv = 0;
+  setSync("Đã lưu trên thiết bị ✓", "var(--ok)");
+}
+
+function saveWord(edit, f){
+  const c = readCustom();
+  const v = c.vocab;
+  if(edit.id === null){
+    v.added.push(Object.assign({ id:uid("custom-"), lv:edit.lv }, f));
+  }else{
+    const i = v.added.findIndex(x => x.id === edit.id);
+    if(i >= 0) v.added[i] = Object.assign({}, v.added[i], f);
+    else v.edits[edit.id] = f;
+  }
+  writeCustom(c);
+  rebuildVocab();
+}
+
+function deleteWord(id){
+  const c = readCustom();
+  const v = c.vocab;
+  const i = v.added.findIndex(x => x.id === id);
+  if(i >= 0){
+    v.added.splice(i, 1);
+  }else{
+    if(!v.deleted.includes(id)) v.deleted.push(id);
+    delete v.edits[id];
+  }
+  writeCustom(c);
+  rebuildVocab();
+}
+
+function saveTopic(edit, topic){
+  const c = readCustom();
+  const g = c.grammar;
+  if(edit.id === null){
+    g.added.push(Object.assign({ id:uid("c-") }, topic));
+  }else{
+    const i = g.added.findIndex(x => x.id === edit.id);
+    if(i >= 0) g.added[i] = Object.assign({}, topic, { id:edit.id });
+    else g.edits[edit.id] = Object.assign({}, topic, { id:edit.id });
+  }
+  writeCustom(c);
+  buildGrammar();
+}
+
+function deleteTopic(id){
+  const c = readCustom();
+  const g = c.grammar;
+  const i = g.added.findIndex(x => x.id === id);
+  if(i >= 0){
+    g.added.splice(i, 1);
+  }else{
+    if(!g.deleted.includes(id)) g.deleted.push(id);
+    delete g.edits[id];
+  }
+  writeCustom(c);
+  buildGrammar();
+}
+
+function resetCustom(kind){
+  const c = readCustom();
+  c[kind] = { added:[], edits:{}, deleted:[] };
+  writeCustom(c);
+  if(kind === "vocab") rebuildVocab();
+  else buildGrammar();
+}
+
+/* =========================================================
+   HUB (màn hình đầu tiên)
+   ========================================================= */
+function renderHub(){
+  let t = 0, k = 0;
+  LV.forEach((l,i)=>{
+    t += l.w.length;
+    k += (S.known[i] || []).length;
+  });
+
+  const saved = readGrammar();
+  const gDone = GRAMMAR.filter(x => saved[x.id] && saved[x.id].best === x.q.length).length;
+
+  const cards = [
+    ["vocab","📚","Anh – Nhật","Từ vựng","Chọn cấp độ, chọn ngày rồi học bằng thẻ, trắc nghiệm hoặc gõ từ."],
+    ["grammar","📖","Part 5 · 6","Ngữ pháp","Đọc quy tắc, xem ví dụ và luyện tập điền vào chỗ trống."],
+    ["manage","⚙️","Tùy chỉnh","Quản lý","Thêm, sửa hoặc xóa từ vựng và chủ đề ngữ pháp."]
+  ];
+
+  $("hub").innerHTML = `
+    <div class="selection-head">
+      <div class="selection-avatar">🎓</div>
+      <div>
+        <small>TOEIC Study</small>
+        <h1>Học gì hôm nay?</h1>
+      </div>
+    </div>
+
+    <section class="selection-hero">
+      <span class="eyebrow">CHÀO MỪNG</span>
+      <h2>Chọn nội dung<br>bạn muốn học</h2>
+      <p>Học từ vựng Anh–Nhật, ôn ngữ pháp hoặc tự quản lý nội dung của bạn.</p>
+    </section>
+
+    <div class="stats">
+      <div class="stat o"><small>Từ đã nhớ</small><b style="font-size:2rem">${k}/${t}</b></div>
+      <div class="stat l"><small>Ngữ pháp hoàn thành</small><b style="font-size:2rem">${gDone}/${GRAMMAR.length}</b></div>
+    </div>
+
+    <div class="mode-list" style="margin-top:14px">
+      ${cards.map(([key,icon,label,title,desc])=>`
+        <button type="button" class="mode-card mode-${key}" data-nav="${key}">
+          <span class="mode-icon">${icon}</span>
+          <span class="mode-copy">
+            <small>${label}</small>
+            <h3>${title}</h3>
+            <p>${desc}</p>
+          </span>
+          <b class="mode-arrow">→</b>
+        </button>
+      `).join("")}
+    </div>
+  `;
+}
+
+function handleNav(k){
+  if(k === "hub"){
+    S.view = "hub";
+  }
+  else if(k === "vocab"){
+    S.view = "home";
+    S.screen = "levels";
+  }
+  else if(k === "grammar"){
+    S.view = "grammar";
+    G.screen = "list";
+    G.quiz = null;
+  }
+  else if(k === "manage"){
+    S.view = "manage";
+    M.edit = null;
+    M.confirm = null;
+  }
+  render();
+  window.scrollTo(0,0);
+}
+
+/* =========================================================
+   MANAGE (quản lý nội dung)
+   ========================================================= */
+const M = { tab:"vocab", lv:0, q:"", edit:null, confirm:null };
+
+function findWord(id){
+  for(const l of LV){
+    const w = l.w.find(x => x[5] === id);
+    if(w) return w;
+  }
+  return null;
+}
+
+function resetBtn(kind){
+  return `
+    <div class="row" style="margin-top:18px">
+      <button class="btn no" data-m="reset" data-v="${kind}">
+        ${M.confirm === "reset:"+kind ? "Bấm lần nữa để khôi phục" : "Khôi phục dữ liệu mặc định"}
+      </button>
+    </div>
+  `;
+}
+
+function vocabListHTML(){
+  const level = LV[M.lv];
+  if(!level) return "";
+
+  const q = M.q.trim().toLowerCase();
+  const rows = level.w.filter(w =>
+    !q ||
+    w[6].toLowerCase().includes(q) ||
+    String(w[7].meaning).toLowerCase().includes(q)
+  );
+
+  if(!rows.length){
+    return `<div class="q"><p class="x">Không có từ nào.</p></div>`;
+  }
+
+  return `
+    <p class="hint" style="margin:0 0 8px">${rows.length}/${level.w.length} từ</p>
+    ${rows.map(w=>{
+      const id = w[5];
+      return `
+        <div class="m-row">
+          <div class="m-main">
+            <b>${w[0]}</b> <span class="pos">${w[1]}</span>
+            <small>${w[2]}</small>
+          </div>
+          <div class="m-act">
+            <button class="mbtn" data-m="editw" data-v="${esc(id)}">Sửa</button>
+            <button class="mbtn del" data-m="delw" data-v="${esc(id)}">
+              ${M.confirm === "w:"+id ? "Chắc chắn?" : "Xóa"}
+            </button>
+          </div>
+        </div>
+      `;
+    }).join("")}
+  `;
+}
+
+function manageVocabHTML(){
+  if(VOCAB_ERR || !LV.length){
+    return `
+      <div class="errorbox">
+        <b>Chưa có dữ liệu từ vựng</b>
+        <p>${esc(VOCAB_ERR || "words.json chưa có dữ liệu.")}</p>
+      </div>
+    `;
+  }
+
+  if(M.lv >= LV.length) M.lv = 0;
+
+  const chips = LV.map((l,i)=>`
+    <button class="chip ${i===M.lv ? "on" : ""}" data-m="lv" data-v="${i}">
+      ${l.n}<small>${l.w.length}</small>
+    </button>
+  `).join("");
+
+  return `
+    <div class="chips">${chips}</div>
+
+    <label class="fld">
+      <span>Tìm từ</span>
+      <input id="msearch" value="${esc(M.q)}" placeholder="Nhập từ hoặc nghĩa" autocomplete="off">
+    </label>
+
+    <div class="row">
+      <button class="btn main" data-m="addw">＋ Thêm từ vào ${LV[M.lv].n}</button>
+    </div>
+
+    <div id="mlist" style="margin-top:14px">${vocabListHTML()}</div>
+
+    ${resetBtn("vocab")}
+  `;
+}
+
+function manageGrammarHTML(){
+  const rows = GRAMMAR.map(t=>`
+    <div class="m-row">
+      <div class="m-main">
+        <b>${esc(t.icon || "📘")} ${esc(t.title)}</b>
+        <small>${t.q.length} câu · ${esc(t.ja || "")}</small>
+      </div>
+      <div class="m-act">
+        <button class="mbtn" data-m="editg" data-v="${esc(t.id)}">Sửa</button>
+        <button class="mbtn del" data-m="delg" data-v="${esc(t.id)}">
+          ${M.confirm === "g:"+t.id ? "Chắc chắn?" : "Xóa"}
+        </button>
+      </div>
+    </div>
+  `).join("");
+
+  return `
+    <div class="row">
+      <button class="btn main" data-m="addg">＋ Thêm chủ đề ngữ pháp</button>
+    </div>
+
+    <div style="margin-top:14px">
+      ${rows || `<div class="q"><p class="x">Chưa có chủ đề nào.</p></div>`}
+    </div>
+
+    ${resetBtn("grammar")}
+  `;
+}
+
+function renderManage(){
+  if(M.edit){
+    return M.edit.kind === "vocab" ? renderWordForm() : renderTopicForm();
+  }
+
+  $("manage").innerHTML = `
+    <div class="selection-head">
+      <button class="back-selection" data-nav="hub" aria-label="Về trang chủ">←</button>
+      <div>
+        <small>Quản lý</small>
+        <h1>Nội dung học</h1>
+      </div>
+    </div>
+
+    <div class="dir">
+      <button class="btn${M.tab==="vocab" ? " on" : ""}" data-m="tab" data-v="vocab">Từ vựng</button>
+      <button class="btn${M.tab==="grammar" ? " on" : ""}" data-m="tab" data-v="grammar">Ngữ pháp</button>
+    </div>
+
+    <div style="margin-top:14px">
+      ${M.tab === "vocab" ? manageVocabHTML() : manageGrammarHTML()}
+    </div>
+  `;
+}
+
+function renderWordForm(){
+  const e = M.edit;
+  const found = e.id === null ? null : findWord(e.id);
+  const raw = found ? found[7] : { word:"", pos:"", meaning:"", example_en:"", example_ja:"" };
+  const lvName = LV[e.lv] ? LV[e.lv].n : "";
+
+  $("manage").innerHTML = `
+    <div class="selection-head">
+      <button class="back-selection" data-m="cancel" aria-label="Hủy">←</button>
+      <div>
+        <small>${lvName}</small>
+        <h1>${e.id === null ? "Thêm từ mới" : "Sửa từ"}</h1>
+      </div>
+    </div>
+
+    <div class="q" style="text-align:left">
+      <label class="fld">
+        <span>Từ tiếng Anh *</span>
+        <input id="wf-word" value="${esc(raw.word)}" autocomplete="off" autocapitalize="off" spellcheck="false">
+      </label>
+      <label class="fld">
+        <span>Loại từ (n., v., adj., adv....)</span>
+        <input id="wf-pos" value="${esc(raw.pos || "")}" autocomplete="off">
+      </label>
+      <label class="fld">
+        <span>Nghĩa tiếng Nhật *</span>
+        <input id="wf-mean" value="${esc(raw.meaning || "")}" autocomplete="off">
+      </label>
+      <label class="fld">
+        <span>Câu ví dụ (tiếng Anh)</span>
+        <input id="wf-en" value="${esc(raw.example_en || "")}" autocomplete="off">
+      </label>
+      <label class="fld">
+        <span>Dịch câu ví dụ (tiếng Nhật)</span>
+        <input id="wf-ja" value="${esc(raw.example_ja || "")}" autocomplete="off">
+      </label>
+
+      <p id="ferr" class="fb bad"></p>
+
+      <div class="row">
+        <button class="btn" data-m="cancel">Hủy</button>
+        <button class="btn main" data-m="save">Lưu</button>
+      </div>
+    </div>
+  `;
+}
+
+function topicToText(t){
+  return {
+    rules: (t.rules || []).join("\n"),
+    ex: (t.examples || []).map(([en,ja]) => `${en} | ${ja}`).join("\n"),
+    q: (t.q || []).map(x => `${x.s} | ${x.o.join(" ; ")} | ${x.a+1} | ${x.e || ""}`).join("\n")
+  };
+}
+
+function renderTopicForm(){
+  const e = M.edit;
+  const empty = { icon:"📘", title:"", ja:"", summary:"", rules:[], examples:[], q:[] };
+  const t = e.id === null ? empty : (GRAMMAR.find(x => x.id === e.id) || empty);
+  const tx = topicToText(t);
+
+  $("manage").innerHTML = `
+    <div class="selection-head">
+      <button class="back-selection" data-m="cancel" aria-label="Hủy">←</button>
+      <div>
+        <small>Ngữ pháp</small>
+        <h1>${e.id === null ? "Thêm chủ đề" : "Sửa chủ đề"}</h1>
+      </div>
+    </div>
+
+    <div class="q" style="text-align:left">
+      <label class="fld">
+        <span>Biểu tượng (emoji)</span>
+        <input id="gf-icon" value="${esc(t.icon || "📘")}" autocomplete="off">
+      </label>
+      <label class="fld">
+        <span>Tên chủ đề *</span>
+        <input id="gf-title" value="${esc(t.title)}" autocomplete="off">
+      </label>
+      <label class="fld">
+        <span>Tên tiếng Nhật</span>
+        <input id="gf-ja" value="${esc(t.ja || "")}" autocomplete="off">
+      </label>
+      <label class="fld">
+        <span>Tóm tắt</span>
+        <input id="gf-sum" value="${esc(t.summary || "")}" autocomplete="off">
+      </label>
+      <label class="fld">
+        <span>Quy tắc (mỗi dòng một quy tắc)</span>
+        <textarea id="gf-rules" rows="6">${esc(tx.rules)}</textarea>
+        <small>Dùng **chữ** để in đậm.</small>
+      </label>
+      <label class="fld">
+        <span>Ví dụ (mỗi dòng một ví dụ)</span>
+        <textarea id="gf-ex" rows="4">${esc(tx.ex)}</textarea>
+        <small>Định dạng: câu tiếng Anh | bản dịch tiếng Nhật</small>
+      </label>
+      <label class="fld">
+        <span>Câu luyện tập * (mỗi dòng một câu)</span>
+        <textarea id="gf-q" rows="8">${esc(tx.q)}</textarea>
+        <small>
+          Định dạng: câu có ___ | đáp án A ; đáp án B ; đáp án C ; đáp án D | số thứ tự đáp án đúng (1-4) | giải thích<br>
+          Ví dụ: The report ___ ready. | is ; are ; be ; been | 1 | Chủ ngữ số ít dùng is.
+        </small>
+      </label>
+
+      <p id="ferr" class="fb bad"></p>
+
+      <div class="row">
+        <button class="btn" data-m="cancel">Hủy</button>
+        <button class="btn main" data-m="save">Lưu</button>
+      </div>
+    </div>
+  `;
+}
+
+function parseTopicForm(){
+  const v = id => $(id).value.trim();
+  const lines = id => v(id).split("\n").map(s => s.trim()).filter(Boolean);
+
+  const title = v("gf-title");
+  if(!title) return { err:"Cần nhập tên chủ đề." };
+
+  const rules = lines("gf-rules");
+
+  const examples = lines("gf-ex").map(line=>{
+    const parts = line.split("|");
+    return [parts[0].trim(), parts.slice(1).join("|").trim()];
+  });
+
+  const q = [];
+  const qLines = lines("gf-q");
+  for(let i=0; i<qLines.length; i++){
+    const parts = qLines[i].split("|").map(s => s.trim());
+    const n = i + 1;
+
+    if(parts.length < 3){
+      return { err:`Câu ${n}: cần ít nhất 3 phần cách nhau bằng dấu | (câu | đáp án | số đúng).` };
+    }
+    if(!parts[0].includes("___")){
+      return { err:`Câu ${n}: cần có ___ để đánh dấu chỗ trống.` };
+    }
+    const opts = parts[1].split(";").map(s => s.trim()).filter(Boolean);
+    if(opts.length < 2 || opts.length > 4){
+      return { err:`Câu ${n}: cần từ 2 đến 4 đáp án, cách nhau bằng dấu ;` };
+    }
+    const a = parseInt(parts[2], 10) - 1;
+    if(!(a >= 0 && a < opts.length)){
+      return { err:`Câu ${n}: số đáp án đúng phải từ 1 đến ${opts.length}.` };
+    }
+    q.push({ s:parts[0], o:opts, a, e:parts.slice(3).join("|") });
+  }
+
+  if(!q.length) return { err:"Cần ít nhất 1 câu luyện tập." };
+
+  return {
+    topic:{
+      icon: v("gf-icon") || "📘",
+      title,
+      ja: v("gf-ja"),
+      summary: v("gf-sum"),
+      rules,
+      examples,
+      q
+    }
+  };
+}
+
+function handleManage(d){
+  const v = d.v;
+  let top = false;
+
+  if(!/^(delw|delg|reset)$/.test(d.m)) M.confirm = null;
+
+  switch(d.m){
+    case "tab":
+      M.tab = v;
+      break;
+
+    case "lv":
+      M.lv = +v;
+      M.q = "";
+      break;
+
+    case "addw":
+      M.edit = { kind:"vocab", id:null, lv:M.lv };
+      top = true;
+      break;
+
+    case "editw":
+      M.edit = { kind:"vocab", id:v, lv:M.lv };
+      top = true;
+      break;
+
+    case "delw":
+      if(M.confirm === "w:"+v){
+        deleteWord(v);
+        M.confirm = null;
+      }else{
+        M.confirm = "w:"+v;
+      }
+      break;
+
+    case "addg":
+      M.edit = { kind:"grammar", id:null };
+      top = true;
+      break;
+
+    case "editg":
+      M.edit = { kind:"grammar", id:v };
+      top = true;
+      break;
+
+    case "delg":
+      if(M.confirm === "g:"+v){
+        deleteTopic(v);
+        M.confirm = null;
+      }else{
+        M.confirm = "g:"+v;
+      }
+      break;
+
+    case "reset":
+      if(M.confirm === "reset:"+v){
+        resetCustom(v);
+        M.confirm = null;
+      }else{
+        M.confirm = "reset:"+v;
+      }
+      break;
+
+    case "cancel":
+      M.edit = null;
+      top = true;
+      break;
+
+    case "save":
+      if(!M.edit) return;
+
+      if(M.edit.kind === "vocab"){
+        const val = id => $(id).value.trim();
+        const f = {
+          word: val("wf-word"),
+          pos: val("wf-pos"),
+          meaning: val("wf-mean"),
+          example_en: val("wf-en"),
+          example_ja: val("wf-ja")
+        };
+        if(!f.word || !f.meaning){
+          $("ferr").textContent = "Cần nhập từ tiếng Anh và nghĩa tiếng Nhật.";
+          return;
+        }
+        saveWord(M.edit, f);
+        M.lv = M.edit.lv;
+      }else{
+        const r = parseTopicForm();
+        if(r.err){
+          $("ferr").textContent = r.err;
+          return;
+        }
+        saveTopic(M.edit, r.topic);
+      }
+
+      M.edit = null;
+      top = true;
+      break;
+  }
+
+  render();
+  if(top) window.scrollTo(0,0);
+}
+
+/* Tìm từ: chỉ cập nhật danh sách để không mất focus ô nhập */
+document.addEventListener("input", e=>{
+  if(e.target.id === "msearch"){
+    M.q = e.target.value;
+    const el = $("mlist");
+    if(el) el.innerHTML = vocabListHTML();
+  }
+});
+
+async function boot(){
+  buildGrammar();
+  try{
+    setSync("Đang tải words.json...");
+
+    RAW = await loadWords();
+    LV = buildLevels(RAW);
+
+    if(!LV.length || !LV.some(x => x.w.length)){
+      throw new Error("words.json chưa có dữ liệu từ vựng.");
+    }
+
+    /* S.known cần đủ số phần tử theo số cấp độ thực tế */
+    S.known = LV.map(()=>[]);
+
+    await loadProgress();
+
+    setSync("Đã tải từ vựng ✓", "var(--ok)");
+    render();
+
+  }catch(error){
+    console.error(error);
+
+    setSync("Lỗi tải dữ liệu", "var(--bad)");
+
+    VOCAB_ERR = String(error.message || error);
+    LV = [];
+    S.known = [];
+    render();
+  }
+}
+
+boot();
+</script>
+
+</body>
+</html>

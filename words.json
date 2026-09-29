@@ -1,0 +1,994 @@
+{
+  "version": 1,
+  "source": "貼り付けたコード（1）.html",
+  "language": {
+    "source": "English",
+    "target": "Japanese"
+  },
+  "levels": [
+    {
+      "level": "Cơ bản",
+      "range": "〜400",
+      "words": [
+        {
+          "id": "level01-001",
+          "word": "meeting",
+          "pos": "n.",
+          "meaning": "会議",
+          "example_en": "The meeting starts at nine.",
+          "example_ja": "会議は9時に始まります。"
+        },
+        {
+          "id": "level01-002",
+          "word": "schedule",
+          "pos": "n.",
+          "meaning": "予定、日程",
+          "example_en": "Please check the schedule.",
+          "example_ja": "予定を確認してください。"
+        },
+        {
+          "id": "level01-003",
+          "word": "customer",
+          "pos": "n.",
+          "meaning": "顧客",
+          "example_en": "The customer called this morning.",
+          "example_ja": "顧客が今朝電話してきました。"
+        },
+        {
+          "id": "level01-004",
+          "word": "price",
+          "pos": "n.",
+          "meaning": "価格",
+          "example_en": "The price is very low.",
+          "example_ja": "価格はとても安いです。"
+        },
+        {
+          "id": "level01-005",
+          "word": "office",
+          "pos": "n.",
+          "meaning": "事務所",
+          "example_en": "Her office is on the third floor.",
+          "example_ja": "彼女のオフィスは3階です。"
+        },
+        {
+          "id": "level01-006",
+          "word": "send",
+          "pos": "v.",
+          "meaning": "送る",
+          "example_en": "I will send the file today.",
+          "example_ja": "今日ファイルを送ります。"
+        },
+        {
+          "id": "level01-007",
+          "word": "reply",
+          "pos": "v.",
+          "meaning": "返信する",
+          "example_en": "Please reply by Friday.",
+          "example_ja": "金曜日までに返信してください。"
+        },
+        {
+          "id": "level01-008",
+          "word": "travel",
+          "pos": "v.",
+          "meaning": "出張する、旅行する",
+          "example_en": "He travels for work.",
+          "example_ja": "彼は仕事で出張します。"
+        },
+        {
+          "id": "level01-009",
+          "word": "ticket",
+          "pos": "n.",
+          "meaning": "チケット、切符",
+          "example_en": "I bought two tickets.",
+          "example_ja": "チケットを2枚買いました。"
+        },
+        {
+          "id": "level01-010",
+          "word": "free",
+          "pos": "adj.",
+          "meaning": "無料の、空いている",
+          "example_en": "The event is free.",
+          "example_ja": "そのイベントは無料です。"
+        },
+        {
+          "id": "level01-011",
+          "word": "late",
+          "pos": "adj.",
+          "meaning": "遅れた",
+          "example_en": "The train was late.",
+          "example_ja": "電車が遅れました。"
+        },
+        {
+          "id": "level01-012",
+          "word": "manager",
+          "pos": "n.",
+          "meaning": "部長、管理者",
+          "example_en": "The manager is in a meeting.",
+          "example_ja": "部長は会議中です。"
+        },
+        {
+          "id": "level01-013",
+          "word": "email",
+          "pos": "n.",
+          "meaning": "電子メール",
+          "example_en": "I checked my email this morning.",
+          "example_ja": "今朝メールを確認しました。"
+        },
+        {
+          "id": "level01-014",
+          "word": "lunch",
+          "pos": "n.",
+          "meaning": "昼食",
+          "example_en": "Let's have lunch together.",
+          "example_ja": "一緒に昼食を食べましょう。"
+        },
+        {
+          "id": "level01-015",
+          "word": "copy",
+          "pos": "n.",
+          "meaning": "コピー、複写",
+          "example_en": "Please make a copy of this page.",
+          "example_ja": "このページのコピーを取ってください。"
+        },
+        {
+          "id": "level01-016",
+          "word": "open",
+          "pos": "v.",
+          "meaning": "開く、開店する",
+          "example_en": "The store opens at ten.",
+          "example_ja": "その店は10時に開きます。"
+        },
+        {
+          "id": "level01-017",
+          "word": "report",
+          "pos": "n.",
+          "meaning": "報告書",
+          "example_en": "I finished the report today.",
+          "example_ja": "今日報告書を仕上げました。"
+        },
+        {
+          "id": "level01-018",
+          "word": "desk",
+          "pos": "n.",
+          "meaning": "机",
+          "example_en": "Please leave it on my desk.",
+          "example_ja": "私の机の上に置いてください。"
+        },
+        {
+          "id": "level01-019",
+          "word": "call",
+          "pos": "v.",
+          "meaning": "電話する",
+          "example_en": "I will call you tomorrow.",
+          "example_ja": "明日お電話します。"
+        },
+        {
+          "id": "level01-020",
+          "word": "buy",
+          "pos": "v.",
+          "meaning": "買う",
+          "example_en": "We buy paper every month.",
+          "example_ja": "私たちは毎月紙を買います。"
+        },
+        {
+          "id": "level01-021",
+          "word": "sell",
+          "pos": "v.",
+          "meaning": "売る",
+          "example_en": "They sell office furniture.",
+          "example_ja": "彼らはオフィス家具を売っています。"
+        },
+        {
+          "id": "level01-022",
+          "word": "order",
+          "pos": "n.",
+          "meaning": "注文",
+          "example_en": "Your order has arrived.",
+          "example_ja": "ご注文の品が届きました。"
+        },
+        {
+          "id": "level01-023",
+          "word": "staff",
+          "pos": "n.",
+          "meaning": "職員、スタッフ",
+          "example_en": "The staff are very friendly.",
+          "example_ja": "スタッフはとても親切です。"
+        },
+        {
+          "id": "level01-024",
+          "word": "hotel",
+          "pos": "n.",
+          "meaning": "ホテル",
+          "example_en": "I booked a hotel near the station.",
+          "example_ja": "駅の近くのホテルを予約しました。"
+        },
+        {
+          "id": "level01-025",
+          "word": "flight",
+          "pos": "n.",
+          "meaning": "フライト、航空便",
+          "example_en": "My flight leaves at noon.",
+          "example_ja": "私の便は正午に出発します。"
+        },
+        {
+          "id": "level01-026",
+          "word": "cost",
+          "pos": "n.",
+          "meaning": "費用",
+          "example_en": "The cost is too high.",
+          "example_ja": "費用が高すぎます。"
+        },
+        {
+          "id": "level01-027",
+          "word": "clean",
+          "pos": "adj.",
+          "meaning": "清潔な",
+          "example_en": "The meeting room is clean.",
+          "example_ja": "会議室はきれいです。"
+        },
+        {
+          "id": "level01-028",
+          "word": "busy",
+          "pos": "adj.",
+          "meaning": "忙しい",
+          "example_en": "She is busy this week.",
+          "example_ja": "彼女は今週忙しいです。"
+        },
+        {
+          "id": "level01-029",
+          "word": "arrive",
+          "pos": "v.",
+          "meaning": "到着する",
+          "example_en": "The guests arrive at six.",
+          "example_ja": "お客様は6時に到着します。"
+        },
+        {
+          "id": "level01-030",
+          "word": "leave",
+          "pos": "v.",
+          "meaning": "出発する、去る",
+          "example_en": "We leave at eight.",
+          "example_ja": "私たちは8時に出発します。"
+        }
+      ]
+    },
+    {
+      "level": "Sơ–trung",
+      "range": "400–600",
+      "words": [
+        {
+          "id": "level02-001",
+          "word": "invoice",
+          "pos": "n.",
+          "meaning": "請求書",
+          "example_en": "Please send the invoice by email.",
+          "example_ja": "請求書をメールで送ってください。"
+        },
+        {
+          "id": "level02-002",
+          "word": "deadline",
+          "pos": "n.",
+          "meaning": "締め切り",
+          "example_en": "The deadline is next Monday.",
+          "example_ja": "締め切りは来週の月曜日です。"
+        },
+        {
+          "id": "level02-003",
+          "word": "appointment",
+          "pos": "n.",
+          "meaning": "面会の約束",
+          "example_en": "I made an appointment with Mr. Lee.",
+          "example_ja": "リーさんと会う約束をしました。"
+        },
+        {
+          "id": "level02-004",
+          "word": "reserve",
+          "pos": "v.",
+          "meaning": "予約する",
+          "example_en": "I reserved a table for four.",
+          "example_ja": "4人分のテーブルを予約しました。"
+        },
+        {
+          "id": "level02-005",
+          "word": "refund",
+          "pos": "n.",
+          "meaning": "返金",
+          "example_en": "You can get a full refund.",
+          "example_ja": "全額返金を受けられます。"
+        },
+        {
+          "id": "level02-006",
+          "word": "employee",
+          "pos": "n.",
+          "meaning": "従業員",
+          "example_en": "Every employee must attend.",
+          "example_ja": "全従業員が出席しなければなりません。"
+        },
+        {
+          "id": "level02-007",
+          "word": "attach",
+          "pos": "v.",
+          "meaning": "添付する",
+          "example_en": "I attached the report.",
+          "example_ja": "報告書を添付しました。"
+        },
+        {
+          "id": "level02-008",
+          "word": "available",
+          "pos": "adj.",
+          "meaning": "利用できる、手が空いている",
+          "example_en": "Are you available on Tuesday?",
+          "example_ja": "火曜日は空いていますか。"
+        },
+        {
+          "id": "level02-009",
+          "word": "delay",
+          "pos": "v.",
+          "meaning": "遅らせる、遅れる",
+          "example_en": "The flight was delayed by two hours.",
+          "example_ja": "飛行機は2時間遅れました。"
+        },
+        {
+          "id": "level02-010",
+          "word": "inventory",
+          "pos": "n.",
+          "meaning": "在庫",
+          "example_en": "We check the inventory weekly.",
+          "example_ja": "私たちは毎週在庫を確認します。"
+        },
+        {
+          "id": "level02-011",
+          "word": "announce",
+          "pos": "v.",
+          "meaning": "発表する",
+          "example_en": "The company announced a new product.",
+          "example_ja": "会社は新製品を発表しました。"
+        },
+        {
+          "id": "level02-012",
+          "word": "receipt",
+          "pos": "n.",
+          "meaning": "領収書",
+          "example_en": "Keep the receipt for your records.",
+          "example_ja": "記録のため領収書を保管してください。"
+        },
+        {
+          "id": "level02-013",
+          "word": "estimate",
+          "pos": "n.",
+          "meaning": "見積もり",
+          "example_en": "Please send us an estimate.",
+          "example_ja": "見積もりを送ってください。"
+        },
+        {
+          "id": "level02-014",
+          "word": "confirm",
+          "pos": "v.",
+          "meaning": "確認する",
+          "example_en": "Please confirm your address.",
+          "example_ja": "ご住所をご確認ください。"
+        },
+        {
+          "id": "level02-015",
+          "word": "vacancy",
+          "pos": "n.",
+          "meaning": "空き、欠員",
+          "example_en": "We have a vacancy in sales.",
+          "example_ja": "営業に欠員があります。"
+        },
+        {
+          "id": "level02-016",
+          "word": "reduce",
+          "pos": "v.",
+          "meaning": "減らす",
+          "example_en": "We want to reduce costs.",
+          "example_ja": "私たちはコストを減らしたいです。"
+        },
+        {
+          "id": "level02-017",
+          "word": "contract",
+          "pos": "n.",
+          "meaning": "契約",
+          "example_en": "Please sign the contract.",
+          "example_ja": "契約書に署名してください。"
+        },
+        {
+          "id": "level02-018",
+          "word": "budget",
+          "pos": "n.",
+          "meaning": "予算",
+          "example_en": "The budget is limited.",
+          "example_ja": "予算は限られています。"
+        },
+        {
+          "id": "level02-019",
+          "word": "increase",
+          "pos": "v.",
+          "meaning": "増える、増やす",
+          "example_en": "Sales increased last month.",
+          "example_ja": "先月、売上が増えました。"
+        },
+        {
+          "id": "level02-020",
+          "word": "decrease",
+          "pos": "v.",
+          "meaning": "減る",
+          "example_en": "Costs decreased this year.",
+          "example_ja": "今年は費用が減りました。"
+        },
+        {
+          "id": "level02-021",
+          "word": "require",
+          "pos": "v.",
+          "meaning": "必要とする",
+          "example_en": "This job requires experience.",
+          "example_ja": "この仕事は経験を必要とします。"
+        },
+        {
+          "id": "level02-022",
+          "word": "approve",
+          "pos": "v.",
+          "meaning": "承認する",
+          "example_en": "The manager approved the plan.",
+          "example_ja": "部長が計画を承認しました。"
+        },
+        {
+          "id": "level02-023",
+          "word": "discount",
+          "pos": "n.",
+          "meaning": "割引",
+          "example_en": "We offer a ten percent discount.",
+          "example_ja": "10%の割引を提供しています。"
+        },
+        {
+          "id": "level02-024",
+          "word": "supplier",
+          "pos": "n.",
+          "meaning": "供給業者",
+          "example_en": "Our supplier is based in Osaka.",
+          "example_ja": "当社の供給業者は大阪にあります。"
+        },
+        {
+          "id": "level02-025",
+          "word": "departure",
+          "pos": "n.",
+          "meaning": "出発",
+          "example_en": "The departure time has changed.",
+          "example_ja": "出発時刻が変更されました。"
+        },
+        {
+          "id": "level02-026",
+          "word": "facility",
+          "pos": "n.",
+          "meaning": "施設",
+          "example_en": "The facility is open to all.",
+          "example_ja": "その施設は誰でも利用できます。"
+        },
+        {
+          "id": "level02-027",
+          "word": "colleague",
+          "pos": "n.",
+          "meaning": "同僚",
+          "example_en": "My colleague will help you.",
+          "example_ja": "同僚がお手伝いします。"
+        },
+        {
+          "id": "level02-028",
+          "word": "submit",
+          "pos": "v.",
+          "meaning": "提出する",
+          "example_en": "Please submit the form by noon.",
+          "example_ja": "正午までに用紙を提出してください。"
+        },
+        {
+          "id": "level02-029",
+          "word": "replace",
+          "pos": "v.",
+          "meaning": "交換する",
+          "example_en": "We need to replace the printer.",
+          "example_ja": "プリンターを交換する必要があります。"
+        },
+        {
+          "id": "level02-030",
+          "word": "register",
+          "pos": "v.",
+          "meaning": "登録する",
+          "example_en": "Please register online.",
+          "example_ja": "オンラインで登録してください。"
+        }
+      ]
+    },
+    {
+      "level": "Trung–cao",
+      "range": "600–800",
+      "words": [
+        {
+          "id": "level03-001",
+          "word": "acquire",
+          "pos": "v.",
+          "meaning": "取得する、買収する",
+          "example_en": "The firm acquired a smaller rival.",
+          "example_ja": "その会社は小さな競合を買収しました。"
+        },
+        {
+          "id": "level03-002",
+          "word": "implement",
+          "pos": "v.",
+          "meaning": "実施する",
+          "example_en": "We will implement the plan in May.",
+          "example_ja": "5月に計画を実施します。"
+        },
+        {
+          "id": "level03-003",
+          "word": "negotiate",
+          "pos": "v.",
+          "meaning": "交渉する",
+          "example_en": "She negotiated a better contract.",
+          "example_ja": "彼女はより良い契約を勝ち取りました。"
+        },
+        {
+          "id": "level03-004",
+          "word": "revenue",
+          "pos": "n.",
+          "meaning": "収益、売上",
+          "example_en": "Revenue increased by ten percent.",
+          "example_ja": "売上は10%増加しました。"
+        },
+        {
+          "id": "level03-005",
+          "word": "postpone",
+          "pos": "v.",
+          "meaning": "延期する",
+          "example_en": "The meeting was postponed until Friday.",
+          "example_ja": "会議は金曜日まで延期されました。"
+        },
+        {
+          "id": "level03-006",
+          "word": "reimburse",
+          "pos": "v.",
+          "meaning": "払い戻す",
+          "example_en": "The company will reimburse travel costs.",
+          "example_ja": "会社が出張費を払い戻します。"
+        },
+        {
+          "id": "level03-007",
+          "word": "subsidiary",
+          "pos": "n.",
+          "meaning": "子会社",
+          "example_en": "It is a subsidiary of a Japanese firm.",
+          "example_ja": "それは日系企業の子会社です。"
+        },
+        {
+          "id": "level03-008",
+          "word": "comply",
+          "pos": "v.",
+          "meaning": "従う、順守する",
+          "example_en": "All staff must comply with the rules.",
+          "example_ja": "全スタッフが規則を順守しなければなりません。"
+        },
+        {
+          "id": "level03-009",
+          "word": "eligible",
+          "pos": "adj.",
+          "meaning": "資格がある",
+          "example_en": "You are eligible for a discount.",
+          "example_ja": "あなたは割引の対象です。"
+        },
+        {
+          "id": "level03-010",
+          "word": "renovation",
+          "pos": "n.",
+          "meaning": "改装",
+          "example_en": "The lobby is under renovation.",
+          "example_ja": "ロビーは改装中です。"
+        },
+        {
+          "id": "level03-011",
+          "word": "shipment",
+          "pos": "n.",
+          "meaning": "出荷、発送品",
+          "example_en": "The shipment arrived a day early.",
+          "example_ja": "荷物は1日早く到着しました。"
+        },
+        {
+          "id": "level03-012",
+          "word": "supervise",
+          "pos": "v.",
+          "meaning": "監督する",
+          "example_en": "She supervises a team of ten.",
+          "example_ja": "彼女は10人のチームを監督しています。"
+        },
+        {
+          "id": "level03-013",
+          "word": "merger",
+          "pos": "n.",
+          "meaning": "合併",
+          "example_en": "The merger will be completed in June.",
+          "example_ja": "合併は6月に完了します。"
+        },
+        {
+          "id": "level03-014",
+          "word": "quarterly",
+          "pos": "adj.",
+          "meaning": "四半期の",
+          "example_en": "The quarterly report is due soon.",
+          "example_ja": "四半期報告書がもうすぐ期限です。"
+        },
+        {
+          "id": "level03-015",
+          "word": "warranty",
+          "pos": "n.",
+          "meaning": "保証",
+          "example_en": "The printer has a two-year warranty.",
+          "example_ja": "そのプリンターには2年保証があります。"
+        },
+        {
+          "id": "level03-016",
+          "word": "collaborate",
+          "pos": "v.",
+          "meaning": "協力する",
+          "example_en": "The two teams collaborate closely.",
+          "example_ja": "2つのチームは緊密に協力しています。"
+        },
+        {
+          "id": "level03-017",
+          "word": "enhance",
+          "pos": "v.",
+          "meaning": "高める",
+          "example_en": "We want to enhance quality.",
+          "example_ja": "私たちは品質を高めたいです。"
+        },
+        {
+          "id": "level03-018",
+          "word": "deficit",
+          "pos": "n.",
+          "meaning": "赤字",
+          "example_en": "The company reported a deficit.",
+          "example_ja": "会社は赤字を報告しました。"
+        },
+        {
+          "id": "level03-019",
+          "word": "proficient",
+          "pos": "adj.",
+          "meaning": "熟達した",
+          "example_en": "She is proficient in three languages.",
+          "example_ja": "彼女は3か国語に堪能です。"
+        },
+        {
+          "id": "level03-020",
+          "word": "adjacent",
+          "pos": "adj.",
+          "meaning": "隣接した",
+          "example_en": "The hotel is adjacent to the airport.",
+          "example_ja": "そのホテルは空港に隣接しています。"
+        },
+        {
+          "id": "level03-021",
+          "word": "relocate",
+          "pos": "v.",
+          "meaning": "移転する",
+          "example_en": "The office will relocate in July.",
+          "example_ja": "事務所は7月に移転します。"
+        },
+        {
+          "id": "level03-022",
+          "word": "accommodate",
+          "pos": "v.",
+          "meaning": "収容する、対応する",
+          "example_en": "The room can accommodate fifty people.",
+          "example_ja": "その部屋は50人を収容できます。"
+        },
+        {
+          "id": "level03-023",
+          "word": "anticipate",
+          "pos": "v.",
+          "meaning": "予想する",
+          "example_en": "We anticipate strong demand.",
+          "example_ja": "強い需要を見込んでいます。"
+        },
+        {
+          "id": "level03-024",
+          "word": "facilitate",
+          "pos": "v.",
+          "meaning": "円滑にする",
+          "example_en": "The software facilitates communication.",
+          "example_ja": "そのソフトはコミュニケーションを円滑にします。"
+        },
+        {
+          "id": "level03-025",
+          "word": "promote",
+          "pos": "v.",
+          "meaning": "昇進させる",
+          "example_en": "She was promoted to director.",
+          "example_ja": "彼女は取締役に昇進しました。"
+        },
+        {
+          "id": "level03-026",
+          "word": "tentative",
+          "pos": "adj.",
+          "meaning": "仮の",
+          "example_en": "The schedule is tentative.",
+          "example_ja": "日程は仮のものです。"
+        },
+        {
+          "id": "level03-027",
+          "word": "inquiry",
+          "pos": "n.",
+          "meaning": "問い合わせ",
+          "example_en": "We received an inquiry from a client.",
+          "example_ja": "顧客から問い合わせがありました。"
+        },
+        {
+          "id": "level03-028",
+          "word": "compensation",
+          "pos": "n.",
+          "meaning": "報酬、補償",
+          "example_en": "The job offers good compensation.",
+          "example_ja": "その仕事は良い報酬があります。"
+        },
+        {
+          "id": "level03-029",
+          "word": "procedure",
+          "pos": "n.",
+          "meaning": "手順",
+          "example_en": "Follow the safety procedure.",
+          "example_ja": "安全手順に従ってください。"
+        },
+        {
+          "id": "level03-030",
+          "word": "prospective",
+          "pos": "adj.",
+          "meaning": "見込みの",
+          "example_en": "Prospective clients visited the office.",
+          "example_ja": "見込み客が事務所を訪れました。"
+        }
+      ]
+    },
+    {
+      "level": "Nâng cao",
+      "range": "800+",
+      "words": [
+        {
+          "id": "level04-001",
+          "word": "stipulate",
+          "pos": "v.",
+          "meaning": "規定する",
+          "example_en": "The contract stipulates a 30-day notice.",
+          "example_ja": "契約は30日前の通知を規定しています。"
+        },
+        {
+          "id": "level04-002",
+          "word": "curtail",
+          "pos": "v.",
+          "meaning": "削減する",
+          "example_en": "The firm curtailed its spending.",
+          "example_ja": "会社は支出を削減しました。"
+        },
+        {
+          "id": "level04-003",
+          "word": "lucrative",
+          "pos": "adj.",
+          "meaning": "儲かる",
+          "example_en": "It was a lucrative deal.",
+          "example_ja": "それは儲かる取引でした。"
+        },
+        {
+          "id": "level04-004",
+          "word": "scrutiny",
+          "pos": "n.",
+          "meaning": "精査",
+          "example_en": "The accounts are under scrutiny.",
+          "example_ja": "会計は精査を受けています。"
+        },
+        {
+          "id": "level04-005",
+          "word": "mandatory",
+          "pos": "adj.",
+          "meaning": "義務の",
+          "example_en": "Attendance is mandatory.",
+          "example_ja": "出席は義務です。"
+        },
+        {
+          "id": "level04-006",
+          "word": "incur",
+          "pos": "v.",
+          "meaning": "(費用・損失を)負う",
+          "example_en": "The company incurred heavy losses.",
+          "example_ja": "会社は大きな損失を被りました。"
+        },
+        {
+          "id": "level04-007",
+          "word": "expedite",
+          "pos": "v.",
+          "meaning": "迅速に進める",
+          "example_en": "We will expedite your order.",
+          "example_ja": "ご注文を迅速に処理します。"
+        },
+        {
+          "id": "level04-008",
+          "word": "contingency",
+          "pos": "n.",
+          "meaning": "不測の事態への備え",
+          "example_en": "We have a contingency plan.",
+          "example_ja": "不測の事態への備えがあります。"
+        },
+        {
+          "id": "level04-009",
+          "word": "amend",
+          "pos": "v.",
+          "meaning": "修正する",
+          "example_en": "The policy was amended last year.",
+          "example_ja": "方針は昨年修正されました。"
+        },
+        {
+          "id": "level04-010",
+          "word": "liability",
+          "pos": "n.",
+          "meaning": "責任、負債",
+          "example_en": "The firm accepts no liability for loss.",
+          "example_ja": "会社は損失に対する責任を負いません。"
+        },
+        {
+          "id": "level04-011",
+          "word": "preliminary",
+          "pos": "adj.",
+          "meaning": "予備の",
+          "example_en": "Preliminary results look promising.",
+          "example_ja": "予備的な結果は有望です。"
+        },
+        {
+          "id": "level04-012",
+          "word": "solicit",
+          "pos": "v.",
+          "meaning": "求める、募る",
+          "example_en": "They solicited feedback from clients.",
+          "example_ja": "彼らは顧客に意見を求めました。"
+        },
+        {
+          "id": "level04-013",
+          "word": "indemnify",
+          "pos": "v.",
+          "meaning": "補償する",
+          "example_en": "The insurer will indemnify the owner.",
+          "example_ja": "保険会社が所有者に補償します。"
+        },
+        {
+          "id": "level04-014",
+          "word": "fiscal",
+          "pos": "adj.",
+          "meaning": "会計の、財政の",
+          "example_en": "The fiscal year ends in March.",
+          "example_ja": "会計年度は3月に終わります。"
+        },
+        {
+          "id": "level04-015",
+          "word": "prerequisite",
+          "pos": "n.",
+          "meaning": "前提条件",
+          "example_en": "Experience is a prerequisite for the job.",
+          "example_ja": "経験はその仕事の前提条件です。"
+        },
+        {
+          "id": "level04-016",
+          "word": "consolidate",
+          "pos": "v.",
+          "meaning": "統合する",
+          "example_en": "They consolidated two offices into one.",
+          "example_ja": "2つの事務所を1つに統合しました。"
+        },
+        {
+          "id": "level04-017",
+          "word": "delegate",
+          "pos": "v.",
+          "meaning": "委任する",
+          "example_en": "She delegated the task to her team.",
+          "example_ja": "彼女はその仕事をチームに任せました。"
+        },
+        {
+          "id": "level04-018",
+          "word": "depreciate",
+          "pos": "v.",
+          "meaning": "価値が下がる",
+          "example_en": "Cars depreciate quickly.",
+          "example_ja": "車は価値がすぐ下がります。"
+        },
+        {
+          "id": "level04-019",
+          "word": "ramification",
+          "pos": "n.",
+          "meaning": "影響、波紋",
+          "example_en": "The decision has legal ramifications.",
+          "example_ja": "その決定には法的な影響があります。"
+        },
+        {
+          "id": "level04-020",
+          "word": "forfeit",
+          "pos": "v.",
+          "meaning": "失う、没収される",
+          "example_en": "You will forfeit your deposit.",
+          "example_ja": "保証金は没収されます。"
+        },
+        {
+          "id": "level04-021",
+          "word": "substantiate",
+          "pos": "v.",
+          "meaning": "裏付ける",
+          "example_en": "Please substantiate your claim.",
+          "example_ja": "主張を裏付けてください。"
+        },
+        {
+          "id": "level04-022",
+          "word": "mitigate",
+          "pos": "v.",
+          "meaning": "軽減する",
+          "example_en": "We must mitigate the risk.",
+          "example_ja": "リスクを軽減しなければなりません。"
+        },
+        {
+          "id": "level04-023",
+          "word": "expire",
+          "pos": "v.",
+          "meaning": "期限が切れる",
+          "example_en": "The contract expires in June.",
+          "example_ja": "契約は6月に期限が切れます。"
+        },
+        {
+          "id": "level04-024",
+          "word": "exempt",
+          "pos": "adj.",
+          "meaning": "免除された",
+          "example_en": "Some items are exempt from tax.",
+          "example_ja": "一部の品目は課税が免除されます。"
+        },
+        {
+          "id": "level04-025",
+          "word": "jeopardize",
+          "pos": "v.",
+          "meaning": "危うくする",
+          "example_en": "Delays could jeopardize the project.",
+          "example_ja": "遅れがプロジェクトを危うくするかもしれません。"
+        },
+        {
+          "id": "level04-026",
+          "word": "reconcile",
+          "pos": "v.",
+          "meaning": "照合する、調整する",
+          "example_en": "Please reconcile the accounts.",
+          "example_ja": "勘定を照合してください。"
+        },
+        {
+          "id": "level04-027",
+          "word": "tenure",
+          "pos": "n.",
+          "meaning": "在職期間",
+          "example_en": "Her tenure lasted ten years.",
+          "example_ja": "彼女の在職期間は10年でした。"
+        },
+        {
+          "id": "level04-028",
+          "word": "surcharge",
+          "pos": "n.",
+          "meaning": "追加料金",
+          "example_en": "A fuel surcharge applies.",
+          "example_ja": "燃料の追加料金がかかります。"
+        },
+        {
+          "id": "level04-029",
+          "word": "concur",
+          "pos": "v.",
+          "meaning": "同意する",
+          "example_en": "The board concurred with the plan.",
+          "example_ja": "取締役会は計画に同意しました。"
+        },
+        {
+          "id": "level04-030",
+          "word": "dispatch",
+          "pos": "v.",
+          "meaning": "発送する、派遣する",
+          "example_en": "We will dispatch the goods today.",
+          "example_ja": "本日、商品を発送します。"
+        }
+      ]
+    }
+  ]
+}
