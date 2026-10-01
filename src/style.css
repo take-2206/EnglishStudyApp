@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+/* ---------- 1. Design tokens (giữ cơ chế dark mode cũ) ---------- */
+:root{
+  --bg:#fbe6d0; --card:#fff; --ink:#1c1b22; --muted:#7d7480;
+  --org:#f7955a; --orgd:#c4551c; --lav:#aa9ef6; --lavs:#e9e5fc;
+  --dk:#23222b; --dkink:#fff; --soft:#fdf0e3; --seg:rgba(255,255,255,.7);
+  --line:#efe0d0; --ok:#127a45; --okbg:#d8f3e3; --bad:#b3261e; --badbg:#fde1dc;
+  --sh:0 14px 28px -18px rgba(120,60,20,.55);
+  --disp:Outfit,"Noto Sans JP","Hiragino Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1a1512; --card:#2a231e; --ink:#f6ede4; --muted:#b3a597;
+    --orgd:#f7a878; --lav:#8b7ff0; --lavs:#38335e; --dk:#0e0c0a; --dkink:#f6ede4;
+    --soft:#372e27; --seg:rgba(255,255,255,.12); --line:#3d332b;
+    --ok:#6ee7a0; --okbg:#0f3322; --bad:#ff9d9d; --badbg:#3d1620;
+    --sh:0 14px 28px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1a1512; --card:#2a231e; --ink:#f6ede4; --muted:#b3a597;
+  --orgd:#f7a878; --lav:#8b7ff0; --lavs:#38335e; --dk:#0e0c0a; --dkink:#f6ede4;
+  --soft:#372e27; --seg:rgba(255,255,255,.12); --line:#3d332b;
+  --ok:#6ee7a0; --okbg:#0f3322; --bad:#ff9d9d; --badbg:#3d1620;
+  --sh:0 14px 28px -18px rgba(0,0,0,.8);
+}
+
+/* Map biến CSS sang utility: bg-card, text-muted, border-line, shadow-sh, font-disp... */
+@theme inline{
+  --color-bg:var(--bg); --color-card:var(--card); --color-ink:var(--ink); --color-muted:var(--muted);
+  --color-org:var(--org); --color-orgd:var(--orgd); --color-lav:var(--lav); --color-lavs:var(--lavs);
+  --color-dk:var(--dk); --color-dkink:var(--dkink); --color-soft:var(--soft); --color-seg:var(--seg);
+  --color-line:var(--line); --color-ok:var(--ok); --color-okbg:var(--okbg);
+  --color-bad:var(--bad); --color-badbg:var(--badbg);
+  --shadow-sh:var(--sh);
+  --font-disp:var(--disp);
+}
+
+/* ---------- 2. Base ---------- */
+@layer base{
+  html{ scroll-padding-top:env(safe-area-inset-top,0px); }
+  body{ @apply m-0 bg-bg text-ink font-disp text-base leading-[1.55]; }
+  [hidden]{ display:none!important; }
+  button:focus-visible,input:focus-visible,textarea:focus-visible{
+    @apply outline-[3px] outline-ink outline-offset-2;
+  }
+  #nav svg,.circle svg{ @apply fill-none stroke-current stroke-2; stroke-linecap:round; stroke-linejoin:round; }
+}
+
+/* ---------- 3. Components (class cũ → utility Tailwind) ---------- */
+@layer components{
+  .wrap{ @apply mx-auto max-w-[430px] px-4 pt-5; padding-bottom:calc(112px + env(safe-area-inset-bottom,0px)); }
+
+  .sync{ @apply fixed right-2.5 z-30 rounded-full bg-card text-muted shadow-sh text-[.72rem] opacity-85 px-2.5 py-1.5;
+         top:calc(10px + env(safe-area-inset-top,0px)); }
+
+  /* chips */
+  .chips{ @apply flex gap-2 overflow-x-auto -mx-4 px-4 pt-0.5 pb-1.5 mb-1; scrollbar-width:none; }
+  .chip{ @apply flex-none rounded-full bg-card text-ink px-4 py-2.5 font-bold text-[.92rem] cursor-pointer; }
+  .chip small{ @apply font-normal opacity-65 ml-1; }
+  .chip.on{ @apply bg-dk text-dkink; }
+
+  /* study header */
+  .sh{ @apply flex items-center gap-3 mb-1.5; }
+  .sh b{ @apply block font-extrabold text-xl leading-tight; }
+  .sh small{ @apply text-muted; }
+  .circle{ @apply size-[46px] rounded-full bg-card text-ink grid place-items-center cursor-pointer shadow-sh; }
+  .circle svg{ @apply size-[22px]; }
+
+  /* bottom nav */
+  #nav{ @apply fixed left-1/2 -translate-x-1/2 z-20 flex gap-1 bg-dk rounded-[32px] p-2;
+        bottom:calc(12px + env(safe-area-inset-bottom,0px)); width:min(calc(100% - 24px),400px); }
+  #nav button{ @apply flex-1 flex flex-col items-center gap-px py-[7px] rounded-3xl bg-transparent text-[#b9b3bf] font-semibold text-[.7rem] cursor-pointer; }
+  #nav svg{ @apply size-[22px]; }
+  #nav button.on{ @apply bg-org text-ink-fixed; }
+
+  /* progress */
+  .bar{ @apply flex items-center gap-1.5 mt-4 mb-3.5; }
+  .bar i{ @apply flex-1 h-[9px] rounded-[9px] bg-seg transition-colors duration-200; }
+  .bar i.on{ @apply bg-orgd; }
+  .track{ @apply flex-1 h-[9px] bg-seg rounded-[9px] overflow-hidden; }
+  .fill{ @apply h-full bg-orgd transition-[width] duration-300; }
+  .bar span{ @apply text-[.85rem] text-muted whitespace-nowrap ml-1.5; }
+
+  /* flashcard */
+  .card{ @apply flex flex-col w-full min-h-80 p-0 rounded-[32px] bg-card text-ink text-center cursor-pointer shadow-sh; }
+  .tk-head{ @apply flex justify-between px-6 py-[13px] bg-org text-ink-fixed rounded-t-[32px] text-[.82rem] font-bold; }
+  .tk-top{ @apply flex-1 flex flex-col items-center justify-center gap-1.5 px-5 py-[26px]; animation:pop .22s ease-out; }
+  .tk-bot{ @apply relative flex justify-between items-center gap-3 px-[26px] py-4 border-t-2 border-dashed border-line text-muted text-[.9rem] text-left; }
+  .tk-bot::before,.tk-bot::after{ content:""; @apply absolute -top-[13px] size-6 rounded-full bg-bg; }
+  .tk-bot::before{ @apply -left-3; }
+  .tk-bot::after{ @apply -right-3; }
+  .tk-bot small{ @apply block; }
+  .stub{ @apply font-extrabold text-[1.05rem] text-orgd; }
+
+  /* question box + text */
+  .q{ @apply w-full bg-card rounded-[30px] px-5 py-[26px] text-center shadow-sh; }
+  .word{ @apply font-extrabold text-[2.8rem] leading-[1.1] tracking-[-.02em] max-[380px]:text-[2.3rem]; overflow-wrap:anywhere; }
+  .pos{ @apply text-orgd font-bold text-[.95rem]; }
+  .vi{ @apply font-extrabold text-[1.8rem] leading-[1.3]; }
+  .x,.hint{ @apply text-muted text-[.9rem]; }
+  .ex{ @apply mt-2.5 pt-2.5 border-t border-dashed border-line w-full text-[.97rem]; }
+  .ex small,.tk-bot span small{ @apply text-muted text-[.88rem]; }
+  .ex b{ @apply text-orgd; }
+
+  /* buttons */
+  .row{ @apply flex gap-2.5 mt-3 items-center; }
+  .btn{ @apply flex-1 bg-card text-ink font-bold text-[.95rem] px-2.5 py-3.5 rounded-[22px] cursor-pointer transition-transform duration-100 active:scale-[.97]; }
+  .btn.main{ @apply bg-dk text-dkink; }
+  .btn.ok{ @apply bg-okbg text-ok; }
+  .btn.no{ @apply bg-badbg text-bad; }
+
+  /* quiz options */
+  .opts{ @apply grid gap-2.5 mt-4; }
+  .opt{ @apply flex items-center gap-3 text-left px-3.5 py-3 bg-soft; }
+  .k{ @apply flex-none size-[30px] rounded-full bg-lav text-ink-fixed grid place-items-center font-extrabold text-[.85rem]; }
+  .opt.right{ @apply bg-okbg text-ok; }
+  .opt.wrong{ @apply bg-badbg text-bad; }
+  .dir{ @apply flex gap-2 mt-3; }
+  .dir .btn{ @apply px-1.5 py-2.5 text-[.85rem]; }
+  .dir .on{ @apply bg-dk text-dkink; }
+
+  .inp{ @apply w-full mt-3.5 p-3.5 font-bold text-[1.15rem] text-center border-2 border-transparent rounded-[20px] bg-soft text-ink; font-family:inherit; }
+  .fb{ @apply font-extrabold mt-3; }
+  .fb.ok{ @apply text-ok; }
+  .fb.bad{ @apply text-bad; }
+  .big{ @apply font-extrabold text-[3.4rem] text-orgd; }
+  .errorbox{ @apply bg-badbg text-bad p-[18px] rounded-3xl mt-5 break-words; }
+
+  /* hub stats */
+  .stats{ @apply grid grid-cols-2 gap-3 mt-3.5 mb-1; }
+  .stat{ @apply rounded-[28px] px-[18px] py-4 text-ink-fixed; }
+  .stat.o{ @apply bg-[#ffd3b3]; }
+  .stat.l{ @apply bg-lavs text-ink; }
+  .stat small{ @apply block text-[.85rem] opacity-80; }
+  .stat b{ @apply font-extrabold text-[2.5rem] leading-[1.1]; }
+
+  /* selection flow */
+  .selection-head{ @apply flex items-center gap-3 mt-1.5 mb-[18px]; }
+  .selection-head small{ @apply text-muted text-[.78rem] font-bold uppercase tracking-[.04em]; }
+  .selection-head h1{ @apply mt-0.5 text-[1.55rem] leading-[1.15] font-extrabold; }
+  .selection-avatar,.back-selection{ @apply size-[50px] rounded-[18px] bg-lavs grid place-items-center text-ink text-[1.35rem] flex-none; }
+  .back-selection{ @apply cursor-pointer text-[1.55rem] shadow-sh; }
+
+  .steps{ @apply flex items-center mt-1 mb-[18px]; }
+  .step{ @apply flex items-center gap-1.5 text-muted whitespace-nowrap; }
+  .step span{ @apply size-7 rounded-full grid place-items-center bg-soft text-[.78rem] font-extrabold; }
+  .step small{ @apply text-[.68rem] font-bold; }
+  .step.active span,.step.done span{ @apply bg-org text-ink-fixed; }
+  .step.active small{ @apply text-ink; }
+  .step-line{ @apply flex-1 h-0.5 bg-line mx-[7px]; }
+
+  .selection-hero{ @apply p-[22px] rounded-[28px] bg-lav text-ink-fixed mb-4; }
+  .selection-hero.compact{ @apply px-5 py-[19px]; }
+  .selection-hero .eyebrow{ @apply inline-block text-[.7rem] font-extrabold tracking-[.08em] opacity-70 mb-1.5; }
+  .selection-hero h2{ @apply mb-[7px] text-[1.65rem] leading-[1.12] font-extrabold; }
+  .selection-hero p{ @apply text-[.9rem] max-w-[34ch]; }
+
+  .level-list,.day-list,.mode-list{ @apply grid gap-3; }
+
+  .level-card{ @apply relative w-full rounded-[28px] p-[18px] text-left text-ink-fixed cursor-pointer shadow-sh overflow-hidden transition active:scale-[.985]; }
+  .level-card:nth-child(1){ @apply bg-[#ffd3b3]; }
+  .level-card:nth-child(2){ @apply bg-lav; }
+  .level-card:nth-child(3){ @apply bg-[#bdebd7]; }
+  .level-card:nth-child(4){ @apply bg-[#f7c7c7]; }
+  .level-card-top,.level-bottom{ @apply flex items-center justify-between gap-2.5; }
+  .level-number{ @apply text-[.72rem] font-black opacity-55; }
+  .level-range{ @apply px-[9px] py-[5px] rounded-full bg-white/50 text-[.72rem] font-extrabold; }
+  .level-icon{ @apply text-[2rem] mt-3 mb-0.5; }
+  .level-info h3{ @apply text-[1.35rem] font-extrabold; }
+  .level-info p{ @apply mt-[3px] mb-3 text-[.82rem] opacity-70; }
+  .level-progress,.day-progress{ @apply h-[7px] bg-white/55 rounded-full overflow-hidden; }
+  .level-progress span,.day-progress span{ @apply block h-full bg-[#23222b] rounded-full; }
+  .level-bottom{ @apply mt-2.5; }
+  .level-bottom small{ @apply text-[.75rem] opacity-70; }
+  .level-bottom b{ @apply text-[.8rem]; }
+
+  .selected-level-pill{ @apply flex items-center gap-2 px-3.5 py-[11px] mb-3 rounded-[18px] bg-card shadow-sh text-[.8rem]; }
+  .selected-level-pill span{ @apply text-muted; }
+  .selected-level-pill b{ @apply font-extrabold; }
+  .selected-level-pill small{ @apply ml-auto text-muted; }
+
+  .day-card{ @apply w-full rounded-[26px] p-4 text-left bg-card text-ink shadow-sh cursor-pointer transition active:scale-[.985]; }
+  .day-card-head{ @apply flex items-center justify-between; }
+  .day-badge{ @apply size-9 rounded-[13px] grid place-items-center bg-org text-ink-fixed font-black; }
+  .day-percent,.complete-badge{ @apply text-[.72rem] font-extrabold text-muted; }
+  .complete-badge{ @apply text-ok; }
+  .day-card-body{ @apply pt-[13px] pb-3; }
+  .day-card-body small{ @apply text-[.7rem] font-extrabold text-muted; }
+  .day-card-body h3{ @apply my-1 text-[1.08rem] leading-[1.3]; }
+  .day-card-body p{ @apply text-muted text-[.8rem]; }
+  .day-progress{ @apply mb-2.5 bg-soft; }
+  .day-progress span{ @apply bg-orgd; }
+  .day-card-action{ @apply flex justify-between items-center text-[.8rem] font-extrabold; }
+
+  .mode-card{ @apply w-full flex items-center gap-3.5 rounded-[28px] p-[18px] text-left bg-card text-ink shadow-sh cursor-pointer transition active:scale-[.985]; }
+  .mode-card.mode-card{ @apply bg-dk text-dkink; }
+  .mode-card.mode-quiz,.mode-card.mode-grammar{ @apply bg-lav text-ink-fixed; }
+  .mode-card.mode-type,.mode-card.mode-manage{ @apply bg-org text-ink-fixed; }
+  .mode-icon{ @apply size-[54px] rounded-[18px] grid place-items-center bg-white/25 text-[1.6rem] flex-none; }
+  .mode-copy{ @apply flex-1; }
+  .mode-copy small{ @apply block text-[.68rem] font-extrabold opacity-65 uppercase; }
+  .mode-copy h3{ @apply mt-0.5 mb-[3px] text-[1.25rem] font-extrabold; }
+  .mode-copy p{ @apply text-[.8rem] opacity-70 leading-[1.35]; }
+  .mode-arrow{ @apply text-[1.35rem] flex-none; }
+
+  /* manage */
+  .m-row{ @apply flex items-center gap-2.5 px-3.5 py-3 bg-card rounded-[20px] shadow-sh mb-2.5; }
+  .m-main{ @apply flex-1 min-w-0 text-left; }
+  .m-main b{ @apply font-extrabold; }
+  .m-main small{ @apply block text-muted truncate; }
+  .m-act{ @apply flex gap-1.5 flex-none; }
+  .mbtn{ @apply rounded-[14px] px-3 py-2 font-bold text-[.8rem] bg-soft text-ink cursor-pointer; }
+  .mbtn.del{ @apply bg-badbg text-bad; }
+  .fld{ @apply block mt-3 text-left; }
+  .fld>span{ @apply block text-[.8rem] font-bold text-muted mb-1; }
+  .fld input,.fld textarea{ @apply w-full px-3.5 py-3 border-2 border-transparent rounded-2xl bg-soft text-ink text-base; font-family:inherit; }
+  .fld textarea{ @apply min-h-[110px] resize-y; }
+  .fld small{ @apply block mt-1 text-muted text-[.78rem] leading-[1.4]; }
+
+  /* grammar */
+  .g-list{ @apply mt-2 pl-5 list-disc; }
+  .g-list li{ @apply mb-2 text-[.97rem]; }
+  .g-list b{ @apply text-orgd; }
+  .g-note{ @apply mt-3 px-3.5 py-3 rounded-[18px] bg-soft text-[.92rem] text-left; }
+}
+
+/* Màu chữ cố định (không đổi theo dark mode), thay cho #1c1b22 cũ */
+@theme{ --color-ink-fixed:#1c1b22; }
+
+@keyframes pop{ from{ opacity:0; transform:translateY(8px); } }
+@media (prefers-reduced-motion:reduce){ .tk-top{ animation:none; } }
+
+/* Cấp độ bị khóa */
+.level-card.locked{ @apply opacity-60 grayscale cursor-not-allowed shadow-none; }

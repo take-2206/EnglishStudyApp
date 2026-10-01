@@ -1,0 +1,508 @@
+{
+  "levels": [
+    {
+      "level": "TOEIC 500",
+      "range": "500",
+      "words": [
+        {
+          "id": "extra-L1-01",
+          "word": "schedule",
+          "pos": "n./v.",
+          "meaning": "予定、スケジュール",
+          "example_en": "Please check the schedule.",
+          "example_ja": "予定を確認してください。"
+        },
+        {
+          "id": "extra-L1-02",
+          "word": "attend",
+          "pos": "v.",
+          "meaning": "出席する",
+          "example_en": "Please attend the meeting at nine.",
+          "example_ja": "9時の会議に出席してください。"
+        },
+        {
+          "id": "extra-L1-03",
+          "word": "invoice",
+          "pos": "n.",
+          "meaning": "請求書",
+          "example_en": "I sent the invoice yesterday.",
+          "example_ja": "昨日請求書を送りました。"
+        },
+        {
+          "id": "extra-L1-04",
+          "word": "receipt",
+          "pos": "n.",
+          "meaning": "領収書",
+          "example_en": "Keep the receipt for refunds.",
+          "example_ja": "返金のため領収書を保管してください。"
+        },
+        {
+          "id": "extra-L1-05",
+          "word": "reserve",
+          "pos": "v.",
+          "meaning": "予約する",
+          "example_en": "I reserved a table for four.",
+          "example_ja": "4名分のテーブルを予約しました。"
+        },
+        {
+          "id": "extra-L1-06",
+          "word": "colleague",
+          "pos": "n.",
+          "meaning": "同僚",
+          "example_en": "My colleague will help you.",
+          "example_ja": "同僚がお手伝いします。"
+        },
+        {
+          "id": "extra-L1-07",
+          "word": "deadline",
+          "pos": "n.",
+          "meaning": "締め切り",
+          "example_en": "The deadline is Friday.",
+          "example_ja": "締め切りは金曜日です。"
+        },
+        {
+          "id": "extra-L1-08",
+          "word": "supply",
+          "pos": "n.",
+          "meaning": "供給、備品",
+          "example_en": "We ordered office supplies.",
+          "example_ja": "事務用品を注文しました。"
+        },
+        {
+          "id": "extra-L1-09",
+          "word": "submit",
+          "pos": "v.",
+          "meaning": "提出する",
+          "example_en": "Submit the form by noon.",
+          "example_ja": "正午までに書類を提出してください。"
+        },
+        {
+          "id": "extra-L1-10",
+          "word": "appointment",
+          "pos": "n.",
+          "meaning": "約束、予約",
+          "example_en": "I have a dental appointment.",
+          "example_ja": "歯科の予約があります。"
+        },
+        {
+          "id": "extra-L1-11",
+          "word": "delay",
+          "pos": "n./v.",
+          "meaning": "遅れ、遅らせる",
+          "example_en": "The flight had a long delay.",
+          "example_ja": "フライトが大幅に遅れました。"
+        },
+        {
+          "id": "extra-L1-12",
+          "word": "order",
+          "pos": "n./v.",
+          "meaning": "注文",
+          "example_en": "We placed an order online.",
+          "example_ja": "オンラインで注文しました。"
+        },
+        {
+          "id": "extra-L1-13",
+          "word": "customer",
+          "pos": "n.",
+          "meaning": "顧客",
+          "example_en": "The customer asked for a refund.",
+          "example_ja": "顧客は返金を求めた。"
+        },
+        {
+          "id": "extra-L1-14",
+          "word": "manager",
+          "pos": "n.",
+          "meaning": "部長、責任者",
+          "example_en": "The manager approved the plan.",
+          "example_ja": "部長が計画を承認した。"
+        },
+        {
+          "id": "extra-L1-15",
+          "word": "promote",
+          "pos": "v.",
+          "meaning": "昇進させる、宣伝する",
+          "example_en": "She was promoted last month.",
+          "example_ja": "彼女は先月昇進した。"
+        }
+      ]
+    },
+    {
+      "level": "TOEIC 600",
+      "range": "600",
+      "words": [
+        {
+          "id": "extra-L2-01",
+          "word": "negotiate",
+          "pos": "v.",
+          "meaning": "交渉する",
+          "example_en": "They negotiated a better price.",
+          "example_ja": "より良い価格を交渉した。"
+        },
+        {
+          "id": "extra-L2-02",
+          "word": "estimate",
+          "pos": "n./v.",
+          "meaning": "見積もり",
+          "example_en": "Please send an estimate.",
+          "example_ja": "見積書を送ってください。"
+        },
+        {
+          "id": "extra-L2-03",
+          "word": "renew",
+          "pos": "v.",
+          "meaning": "更新する",
+          "example_en": "Renew your contract soon.",
+          "example_ja": "契約を早めに更新してください。"
+        },
+        {
+          "id": "extra-L2-04",
+          "word": "facility",
+          "pos": "n.",
+          "meaning": "施設",
+          "example_en": "The facility opens in May.",
+          "example_ja": "その施設は5月に開業する。"
+        },
+        {
+          "id": "extra-L2-05",
+          "word": "relocate",
+          "pos": "v.",
+          "meaning": "移転する",
+          "example_en": "The office will relocate to Osaka.",
+          "example_ja": "オフィスは大阪へ移転する予定だ。"
+        },
+        {
+          "id": "extra-L2-06",
+          "word": "temporary",
+          "pos": "adj.",
+          "meaning": "一時的な",
+          "example_en": "He took a temporary job.",
+          "example_ja": "彼は臨時の仕事に就いた。"
+        },
+        {
+          "id": "extra-L2-07",
+          "word": "inventory",
+          "pos": "n.",
+          "meaning": "在庫",
+          "example_en": "We check inventory weekly.",
+          "example_ja": "毎週在庫を確認している。"
+        },
+        {
+          "id": "extra-L2-08",
+          "word": "shipment",
+          "pos": "n.",
+          "meaning": "出荷、積荷",
+          "example_en": "The shipment arrived late.",
+          "example_ja": "荷物は遅れて到着した。"
+        },
+        {
+          "id": "extra-L2-09",
+          "word": "vendor",
+          "pos": "n.",
+          "meaning": "納入業者",
+          "example_en": "We changed our vendor.",
+          "example_ja": "納入業者を変更した。"
+        },
+        {
+          "id": "extra-L2-10",
+          "word": "registration",
+          "pos": "n.",
+          "meaning": "登録",
+          "example_en": "Registration closes Monday.",
+          "example_ja": "登録は月曜日に締め切られる。"
+        },
+        {
+          "id": "extra-L2-11",
+          "word": "reimburse",
+          "pos": "v.",
+          "meaning": "払い戻す",
+          "example_en": "The company will reimburse travel costs.",
+          "example_ja": "会社が出張費を払い戻す。"
+        },
+        {
+          "id": "extra-L2-12",
+          "word": "reputation",
+          "pos": "n.",
+          "meaning": "評判",
+          "example_en": "The firm has a good reputation.",
+          "example_ja": "その会社は評判が良い。"
+        },
+        {
+          "id": "extra-L2-13",
+          "word": "launch",
+          "pos": "v./n.",
+          "meaning": "発売する",
+          "example_en": "They will launch a new product.",
+          "example_ja": "新製品を発売する予定だ。"
+        },
+        {
+          "id": "extra-L2-14",
+          "word": "candidate",
+          "pos": "n.",
+          "meaning": "候補者",
+          "example_en": "We interviewed three candidates.",
+          "example_ja": "候補者3名を面接した。"
+        },
+        {
+          "id": "extra-L2-15",
+          "word": "revise",
+          "pos": "v.",
+          "meaning": "修正する",
+          "example_en": "Please revise the report.",
+          "example_ja": "報告書を修正してください。"
+        }
+      ]
+    },
+    {
+      "level": "TOEIC 730",
+      "range": "730",
+      "words": [
+        {
+          "id": "extra-L3-01",
+          "word": "acquire",
+          "pos": "v.",
+          "meaning": "買収する、獲得する",
+          "example_en": "The firm acquired a rival.",
+          "example_ja": "その会社はライバル社を買収した。"
+        },
+        {
+          "id": "extra-L3-02",
+          "word": "comply",
+          "pos": "v.",
+          "meaning": "従う",
+          "example_en": "All staff must comply with the rules.",
+          "example_ja": "全社員が規則に従う必要がある。"
+        },
+        {
+          "id": "extra-L3-03",
+          "word": "outstanding",
+          "pos": "adj.",
+          "meaning": "未払いの、優れた",
+          "example_en": "There is an outstanding balance.",
+          "example_ja": "未払い残高があります。"
+        },
+        {
+          "id": "extra-L3-04",
+          "word": "liability",
+          "pos": "n.",
+          "meaning": "責任、負債",
+          "example_en": "The company limits its liability.",
+          "example_ja": "会社は責任を制限している。"
+        },
+        {
+          "id": "extra-L3-05",
+          "word": "implement",
+          "pos": "v.",
+          "meaning": "実施する",
+          "example_en": "We will implement the plan.",
+          "example_ja": "その計画を実施する。"
+        },
+        {
+          "id": "extra-L3-06",
+          "word": "incentive",
+          "pos": "n.",
+          "meaning": "奨励金",
+          "example_en": "Bonuses are a strong incentive.",
+          "example_ja": "ボーナスは強い動機づけになる。"
+        },
+        {
+          "id": "extra-L3-07",
+          "word": "merger",
+          "pos": "n.",
+          "meaning": "合併",
+          "example_en": "The merger was announced today.",
+          "example_ja": "合併が本日発表された。"
+        },
+        {
+          "id": "extra-L3-08",
+          "word": "compensation",
+          "pos": "n.",
+          "meaning": "報酬、補償",
+          "example_en": "Compensation includes health insurance.",
+          "example_ja": "報酬には健康保険が含まれる。"
+        },
+        {
+          "id": "extra-L3-09",
+          "word": "commodity",
+          "pos": "n.",
+          "meaning": "商品、物資",
+          "example_en": "Oil is a major commodity.",
+          "example_ja": "石油は主要な商品だ。"
+        },
+        {
+          "id": "extra-L3-10",
+          "word": "subsidiary",
+          "pos": "n.",
+          "meaning": "子会社",
+          "example_en": "It is a subsidiary of ABC.",
+          "example_ja": "それはABC社の子会社だ。"
+        },
+        {
+          "id": "extra-L3-11",
+          "word": "expire",
+          "pos": "v.",
+          "meaning": "期限が切れる",
+          "example_en": "The offer expires on May 31.",
+          "example_ja": "その提案は5月31日に期限切れとなる。"
+        },
+        {
+          "id": "extra-L3-12",
+          "word": "allocate",
+          "pos": "v.",
+          "meaning": "割り当てる",
+          "example_en": "Funds were allocated to research.",
+          "example_ja": "資金は研究に割り当てられた。"
+        },
+        {
+          "id": "extra-L3-13",
+          "word": "revenue",
+          "pos": "n.",
+          "meaning": "収益",
+          "example_en": "Revenue rose ten percent.",
+          "example_ja": "収益は10%増加した。"
+        },
+        {
+          "id": "extra-L3-14",
+          "word": "prospective",
+          "pos": "adj.",
+          "meaning": "見込みの",
+          "example_en": "Prospective clients visited today.",
+          "example_ja": "見込み客が本日訪れた。"
+        },
+        {
+          "id": "extra-L3-15",
+          "word": "stipulate",
+          "pos": "v.",
+          "meaning": "規定する",
+          "example_en": "The contract stipulates a deadline.",
+          "example_ja": "契約書は期限を規定している。"
+        }
+      ]
+    },
+    {
+      "level": "TOEIC 860",
+      "range": "860",
+      "words": [
+        {
+          "id": "extra-L4-01",
+          "word": "contingency",
+          "pos": "n.",
+          "meaning": "不測の事態",
+          "example_en": "We have a contingency plan.",
+          "example_ja": "不測の事態に備えた計画がある。"
+        },
+        {
+          "id": "extra-L4-02",
+          "word": "amend",
+          "pos": "v.",
+          "meaning": "修正する",
+          "example_en": "The law was amended last year.",
+          "example_ja": "法律は昨年改正された。"
+        },
+        {
+          "id": "extra-L4-03",
+          "word": "disclose",
+          "pos": "v.",
+          "meaning": "開示する",
+          "example_en": "He refused to disclose the figures.",
+          "example_ja": "彼は数字の開示を拒んだ。"
+        },
+        {
+          "id": "extra-L4-04",
+          "word": "depreciation",
+          "pos": "n.",
+          "meaning": "減価償却",
+          "example_en": "Depreciation lowers asset value.",
+          "example_ja": "減価償却で資産価値が下がる。"
+        },
+        {
+          "id": "extra-L4-05",
+          "word": "liquidate",
+          "pos": "v.",
+          "meaning": "清算する",
+          "example_en": "The firm was forced to liquidate.",
+          "example_ja": "その会社は清算を余儀なくされた。"
+        },
+        {
+          "id": "extra-L4-06",
+          "word": "mandatory",
+          "pos": "adj.",
+          "meaning": "義務的な",
+          "example_en": "Attendance is mandatory.",
+          "example_ja": "出席は必須です。"
+        },
+        {
+          "id": "extra-L4-07",
+          "word": "fiscal",
+          "pos": "adj.",
+          "meaning": "会計の、財政の",
+          "example_en": "The fiscal year ends in March.",
+          "example_ja": "会計年度は3月に終わる。"
+        },
+        {
+          "id": "extra-L4-08",
+          "word": "jurisdiction",
+          "pos": "n.",
+          "meaning": "管轄",
+          "example_en": "The case is outside our jurisdiction.",
+          "example_ja": "その件は我々の管轄外だ。"
+        },
+        {
+          "id": "extra-L4-09",
+          "word": "scrutinize",
+          "pos": "v.",
+          "meaning": "精査する",
+          "example_en": "Auditors scrutinize every account.",
+          "example_ja": "監査人はすべての勘定を精査する。"
+        },
+        {
+          "id": "extra-L4-10",
+          "word": "arbitration",
+          "pos": "n.",
+          "meaning": "仲裁",
+          "example_en": "The dispute went to arbitration.",
+          "example_ja": "紛争は仲裁に回された。"
+        },
+        {
+          "id": "extra-L4-11",
+          "word": "consolidate",
+          "pos": "v.",
+          "meaning": "統合する",
+          "example_en": "They consolidated three offices.",
+          "example_ja": "3つのオフィスを統合した。"
+        },
+        {
+          "id": "extra-L4-12",
+          "word": "lucrative",
+          "pos": "adj.",
+          "meaning": "利益の大きい",
+          "example_en": "It was a lucrative deal.",
+          "example_ja": "利益の大きい取引だった。"
+        },
+        {
+          "id": "extra-L4-13",
+          "word": "divest",
+          "pos": "v.",
+          "meaning": "売却する",
+          "example_en": "The firm will divest two units.",
+          "example_ja": "会社は2部門を売却する。"
+        },
+        {
+          "id": "extra-L4-14",
+          "word": "solvency",
+          "pos": "n.",
+          "meaning": "支払い能力",
+          "example_en": "Solvency ratios were strong.",
+          "example_ja": "支払い能力の指標は良好だった。"
+        },
+        {
+          "id": "extra-L4-15",
+          "word": "expedite",
+          "pos": "v.",
+          "meaning": "促進する",
+          "example_en": "Please expedite the order.",
+          "example_ja": "注文を迅速に処理してください。"
+        }
+      ]
+    }
+  ]
+}
